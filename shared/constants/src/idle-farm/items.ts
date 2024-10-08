@@ -63,7 +63,8 @@ export const IDLE_FARM_ITEMS_REFINED = {
   oxygen: 'oxygen',
   bitterSpice: 'bitter spice',
   naturalFertilizer: 'natural fertilizer',
-  saltySpice: 'salty spice'
+  saltySpice: 'salty spice',
+  plastic: 'plastic'
 } as const;
 
 export const IDLE_FARM_ITEMS_PRODUCT = {
@@ -78,7 +79,9 @@ export const IDLE_FARM_ITEMS_PRODUCT = {
   dirustMix: 'dirust mix',
   cpu: 'cpu',
   battery: 'battery',
-  biofuel: 'biofuel'
+  biofuel: 'biofuel',
+  idlisticFlavor: 'idlistic flavor',
+  radiationEmitter: 'radiation remitter'
 } as const;
 
 export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
@@ -127,6 +130,10 @@ export const IDLE_FARM_ITEMS_CONSUMABLE = {
   legendaryLootbox: 'legendary lootbox',
   taxCollectorLootbox: 'tax collector lootbox',
   megaBoost: 'mega boost'
+} as const;
+
+export const IDLE_FARM_ITEMS_EVENT = {
+ 
 } as const;
 
 export const IDLE_FARM_ITEMS_BOX = {
@@ -194,7 +201,8 @@ export const IDLE_FARM_ITEMS_CONTAINER = {
   oxygenContainer: 'oxygen container',
   bitterSpiceContainer: 'bitter spice container',
   naturalFertilizerContainer: 'natural fertilizer container',
-  saltySpiceContainer: 'salty spice container'
+  saltySpiceContainer: 'salty spice container',
+  pasticContainer: 'plastic container'
 } as const;
 
 export const IDLE_FARM_ITEMS_SHIP = {
@@ -209,7 +217,9 @@ export const IDLE_FARM_ITEMS_SHIP = {
   dirustMixShip: 'dirust mix ship',
   cpuShip: 'cpu ship',
   batteryShip: 'battery ship',
-  biofuelShip: 'biofuel ship'
+  biofuelShip: 'biofuel ship',
+  idlisticFlavorShip: 'idlistic flavor ship',
+  radiationEmitterShip: 'radiation emitter ship'
 } as const;
 
 export const IDLE_FARM_ITEMS_PACKING_ITEMS = {
@@ -304,7 +314,8 @@ export const IDLE_FARM_ITEMS_CONTAINER_TYPE = {
   oxygen: 'oxygenContainer',
   bitterSpice: 'bitterSpiceContainer',
   naturalFertilizer: 'naturalFertilizerContainer',
-  saltySpice: 'saltySpiceContainer'
+  saltySpice: 'saltySpiceContainer',
+  plastic: 'plasticContainer'
 } as const;
 
 export const IDLE_FARM_ITEMS_SHIP_TYPE = {
@@ -319,7 +330,9 @@ export const IDLE_FARM_ITEMS_SHIP_TYPE = {
   dirustMix: 'dirustMixShip',
   cpu: 'cpuShip',
   battery: 'batteryShip',
-  biofuel: 'biofuelShip'
+  biofuel: 'biofuelShip',
+  idlisticFlavor: 'idlisticFlavorShip',
+  radiationEmitter: 'radiationEmitterShip'
 } as const;
 
 export const IDLE_FARM_ITEMS_PACKING_PAIR = {
