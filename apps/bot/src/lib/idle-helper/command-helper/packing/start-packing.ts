@@ -2,6 +2,7 @@ import type {Client, Message, User} from 'discord.js';
 import {EmbedBuilder} from 'discord.js';
 import {userService} from '../../../../services/database/user.service';
 import type {IDLE_FARM_DONOR_TIER} from '@idle-helper/constants';
+// add IDLE_FARM_ITEMS_ASSEMBLY once spaceships are released
 import {
   BOT_COLOR,
   BOT_EMOJI,
@@ -89,6 +90,7 @@ export const _startPacking = async ({
   const materialBoxType = IDLE_FARM_ITEMS_PACKING_PAIR[materialName];
   const boxPrice = marketItems[materialBoxType].price;
 
+  // add mythic worker tokens once spaceships are released. Maybe rework the whole condition tree. 
   const workerTokenToUsed: keyof typeof IDLE_FARM_WORKER_TOKENS = materialName in IDLE_FARM_ITEMS_REFINED ? 'rareWorkerTokens' : materialName in IDLE_FARM_ITEMS_PRODUCT ? 'epicWorkerTokens' : 'workerTokens';
 
   let event = createIdleFarmCommandListener({
