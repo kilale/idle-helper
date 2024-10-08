@@ -30,7 +30,10 @@ export const IDLE_FARM_ITEMS_MATERIAL = {
   tomato: 'tomato',
   siliconOre: 'silicon ore',
   lithium: 'lithium',
-  salt: 'salt'
+  salt: 'salt',
+  cocoa: 'cocoa',
+  petroleum: 'petroleum',
+  uranium: 'uranium'
 } as const;
 
 export const IDLE_FARM_ITEMS_REFINED = {
@@ -57,12 +60,10 @@ export const IDLE_FARM_ITEMS_REFINED = {
   pasta: 'pasta',
   particleboard: 'particleboard',
   dirtyWater: 'dirty water',
-  oxygen: 'oxygen'
-} as const;
-
-export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
-  ...IDLE_FARM_ITEMS_MATERIAL,
-  ...IDLE_FARM_ITEMS_REFINED
+  oxygen: 'oxygen',
+  bitterSpice: 'bitter spice',
+  naturalFertilizer: 'natural fertilizer',
+  saltySpice: 'salty spice'
 } as const;
 
 export const IDLE_FARM_ITEMS_PRODUCT = {
@@ -76,12 +77,23 @@ export const IDLE_FARM_ITEMS_PRODUCT = {
   bulb: 'bulb',
   dirustMix: 'dirust mix',
   cpu: 'cpu',
-  battery: 'battery'
+  battery: 'battery',
+  biofuel: 'biofuel'
+} as const;
+
+export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
+  ...IDLE_FARM_ITEMS_MATERIAL,
+  ...IDLE_FARM_ITEMS_REFINED,
+  ...IDLE_FARM_ITEMS_PRODUCT
 } as const;
 
 export const IDLE_FARM_ITEMS_ASSEMBLY = {
+  soda: 'soda',
   clock: 'clock',
-  flashlight: 'flashlight'
+  flashlight: 'flashlight',
+  solarPanel: 'solar panel',
+  dudirusirtEntity: 'dudirusirt entity',
+  microwave: 'microwave'
 } as const;
 
 export const IDLE_FARM_ITEMS_CONSUMABLE = {
@@ -90,18 +102,23 @@ export const IDLE_FARM_ITEMS_CONSUMABLE = {
   energyGalloon: 'energy galloon',
   timeSpeeder: 'time speeder',
   timeCompressor: 'time compressor',
+  timeDilator: 'time dilator',
   uselessDice: 'useless dice',
   commonDice: 'common dice',
   uncommonDice: 'uncommon dice',
   rareDice: 'rare dice',
   epicDice: 'epic dice',
   mythicDice: 'mythic dice',
+  legendaryDice: 'legendary dice',
   uselessLootbox: 'useless lootbox',
   commonLootbox: 'common lootbox',
   uncommonLootbox: 'uncommon lootbox',
   rareLootbox: 'rare lootbox',
   epicLootbox: 'epic lootbox',
-  mythicLootbox: 'mythic lootbox'
+  mythicLootbox: 'mythic lootbox',
+  legendaryLootbox: 'legendary lootbox',
+  taxCollectorLootbox: 'tax collector lootbox',
+  megaBoost: 'mega boost'
 } as const;
 
 export const IDLE_FARM_ITEMS_BOX = {
@@ -136,7 +153,10 @@ export const IDLE_FARM_ITEMS_BOX = {
   tomatoBox: 'tomato box',
   siliconOreBox: 'silicon ore box',
   lithiumBox: 'lithium box',
-  saltBox: 'salt box'
+  saltBox: 'salt box',
+  cocoaBox: 'cocoa box',
+  petroleumBox: 'petroleum box',
+  uraniumBox: 'uranium box'
 } as const;
 
 export const IDLE_FARM_ITEMS_CONTAINER = {
@@ -163,17 +183,37 @@ export const IDLE_FARM_ITEMS_CONTAINER = {
   pastaContainer: 'pasta container',
   particleboardContainer: 'particleboard container',
   dirtyWaterContainer: 'dirty water container',
-  oxygenContainer: 'oxygen container'
+  oxygenContainer: 'oxygen container',
+  bitterSpiceContainer: 'bitter spice container',
+  naturalFertilizerContainer: 'natural fertilizer container',
+  saltySpiceContainer: 'salty spice container'
+} as const;
+
+export const IDLE_FARM_ITEMS_SHIP = {
+  fabricShip: 'fabric ship',
+  chairShip: 'chair ship',
+  wireShip: 'wire ship',
+  ropeShip: 'rope ship',
+  gearShip: 'gear ship',
+  pizzaShip: 'pizza ship',
+  lasagnaShip: 'lasagna ship',
+  bulbShip: 'bulb ship',
+  dirustMixShip: 'dirust mix ship',
+  cpuShip: 'cpu ship',
+  batteryShip: 'battery ship',
+  biofuelShip: 'biofuel ship'
 } as const;
 
 export const IDLE_FARM_ITEMS_PACKING_ITEMS = {
   ...IDLE_FARM_ITEMS_BOX,
-  ...IDLE_FARM_ITEMS_CONTAINER
+  ...IDLE_FARM_ITEMS_CONTAINER,
+  ...IDLE_FARM_ITEMS_SHIP
 } as const;
 
 export const IDLE_FARM_WORKER_TOKENS = {
   workerTokens: 'worker tokens',
-  rareWorkerTokens: 'rare worker tokens'
+  rareWorkerTokens: 'rare worker tokens',
+  epicWorkerTokens: 'epic worker tokens'
 
 } as const;
 
@@ -185,6 +225,7 @@ export const IDLE_FARM_ITEMS = {
   ...IDLE_FARM_ITEMS_CONSUMABLE,
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
+  ...IDLE_FARM_ITEMS_SHIP,
   ...IDLE_FARM_ITEMS_ASSEMBLY
 } as const;
 
@@ -220,7 +261,10 @@ export const IDLE_FARM_ITEMS_BOX_TYPE = {
   tomato: 'tomatoBox',
   siliconOre: 'siliconOreBox',
   lithium: 'lithiumBox',
-  salt: 'saltBox'
+  salt: 'saltBox',
+  cocoa: 'cocoaBox',
+  petroleum: 'petroleumBox',
+  uranium: 'uraniumBox'
 } as const;
 
 
@@ -248,10 +292,29 @@ export const IDLE_FARM_ITEMS_CONTAINER_TYPE = {
   pasta: 'pastaContainer',
   particleboard: 'particleboardContainer',
   dirtyWater: 'dirtyWaterContainer',
-  oxygen: 'oxygenContainer'
+  oxygen: 'oxygenContainer',
+  bitterSpice: 'bitterSpiceContainer',
+  naturalFertilizer: 'naturalFertilizerContainer',
+  saltySpice: 'saltySpiceContainer'
+} as const;
+
+export const IDLE_FARM_ITEMS_SHIP_TYPE = {
+  fabric: 'fabricShip',
+  chair: 'chairShip',
+  wire: 'wireShip',
+  rope: 'ropeShip',
+  gear: 'gearShip',
+  pizza: 'pizzaShip',
+  lasagna: 'lasagnaShip',
+  bulb: 'bulbShip',
+  dirustMix: 'dirustMixShip',
+  cpu: 'cpuShip',
+  battery: 'batteryShip',
+  biofuel: 'biofuelShip'
 } as const;
 
 export const IDLE_FARM_ITEMS_PACKING_PAIR = {
   ...IDLE_FARM_ITEMS_BOX_TYPE,
-  ...IDLE_FARM_ITEMS_CONTAINER_TYPE
+  ...IDLE_FARM_ITEMS_CONTAINER_TYPE,
+  ...IDLE_FARM_ITEMS_SHIP_TYPE
 } as const;

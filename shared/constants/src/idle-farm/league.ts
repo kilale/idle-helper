@@ -18,7 +18,17 @@ export const IDLE_FARM_LEAGUE = {
   glass2: 'glass2',
   glass3: 'glass3',
   glass4: 'glass4',
-  glass5: 'glass5'
+  glass5: 'glass5',
+  wire1: 'wire1',
+  wire2: 'wire2',
+  wire3: 'wire3',
+  wire4: 'wire4',
+  wire5: 'wire5',
+  flashlight1: 'flashlight1',
+  flashlight2: 'flashlight2',
+  flashlight3: 'flashlight3',
+  flashlight4: 'flashlight4',
+  flashlight5: 'flashlight5'
 };
 
 export const IDLE_FARM_LEAGUE_POINTS = {
@@ -41,5 +51,15 @@ export const IDLE_FARM_LEAGUE_POINTS = {
   [IDLE_FARM_LEAGUE.glass2]: 39000,
   [IDLE_FARM_LEAGUE.glass3]: 46500,
   [IDLE_FARM_LEAGUE.glass4]: 54000,
-  [IDLE_FARM_LEAGUE.glass5]: 61500
+  [IDLE_FARM_LEAGUE.glass5]: 61500,
+  [IDLE_FARM_LEAGUE.wire1]: 74000,
+  [IDLE_FARM_LEAGUE.wire2]: 86500,
+  [IDLE_FARM_LEAGUE.wire3]: 99000,
+  [IDLE_FARM_LEAGUE.wire4]: 111500,
+  [IDLE_FARM_LEAGUE.wire5]: 124000,
+  [IDLE_FARM_LEAGUE.flashlight1]: 181500,
+  [IDLE_FARM_LEAGUE.flashlight2]: 239000,
+  [IDLE_FARM_LEAGUE.flashlight3]: 296500,
+  [IDLE_FARM_LEAGUE.flashlight4]: 354000,
+  [IDLE_FARM_LEAGUE.flashlight5]: 411500
 };

@@ -6,8 +6,12 @@ export const IDLE_FARM_WORKER_TYPE = {
   wise: 'wise',
   expert: 'expert',
   masterful: 'masterful',
+  guru: 'guru',
+  lovely: 'lovely',
   spooky: 'spooky',
-  snowy: 'snowy'
+  snowy: 'snowy',
+  jumpy: 'jumpy',
+  festive: 'festive'
 } as const;
 
 export const IDLE_FARM_WORKER_LABEL = {
@@ -18,8 +22,12 @@ export const IDLE_FARM_WORKER_LABEL = {
   [IDLE_FARM_WORKER_TYPE.wise]: 'wise',
   [IDLE_FARM_WORKER_TYPE.expert]: 'expert',
   [IDLE_FARM_WORKER_TYPE.masterful]: 'masterful',
+  [IDLE_FARM_WORKER_TYPE.guru]: 'guru',
+  [IDLE_FARM_WORKER_TYPE.lovely]: 'lovely',
   [IDLE_FARM_WORKER_TYPE.spooky]: 'spooky',
-  [IDLE_FARM_WORKER_TYPE.snowy]: 'snowy'
+  [IDLE_FARM_WORKER_TYPE.snowy]: 'snowy',
+  [IDLE_FARM_WORKER_TYPE.jumpy]: 'jumpy',
+  [IDLE_FARM_WORKER_TYPE.festive]: 'festive'
 };
 
 export const IDLE_FARM_WORKER_ID = {
@@ -30,8 +38,12 @@ export const IDLE_FARM_WORKER_ID = {
   [IDLE_FARM_WORKER_TYPE.wise]: 5,
   [IDLE_FARM_WORKER_TYPE.expert]: 6,
   [IDLE_FARM_WORKER_TYPE.masterful]: 7,
-  [IDLE_FARM_WORKER_TYPE.spooky]: 1,
-  [IDLE_FARM_WORKER_TYPE.snowy]: 2
+  [IDLE_FARM_WORKER_TYPE.guru]: 8,
+  [IDLE_FARM_WORKER_TYPE.lovely]: 1,
+  [IDLE_FARM_WORKER_TYPE.jumpy]: 5,
+  [IDLE_FARM_WORKER_TYPE.festive]: 2,
+  [IDLE_FARM_WORKER_TYPE.spooky]: 3,
+  [IDLE_FARM_WORKER_TYPE.snowy]: 4
 } as const;
 
 export const IDLE_FARM_WORKER_STATS = {
@@ -70,6 +82,16 @@ export const IDLE_FARM_WORKER_STATS = {
     strength: 3,
     intelligence: 3
   },
+  [IDLE_FARM_WORKER_TYPE.guru]: {
+    speed: 3.5,
+    strength: 3.5,
+    intelligence: 3
+  },
+  [IDLE_FARM_WORKER_TYPE.lovely]: {
+    speed: 5,
+    strength: 6,
+    intelligence: 4
+  },
   [IDLE_FARM_WORKER_TYPE.spooky]: {
     speed: 5,
     strength: 6,
@@ -79,6 +101,16 @@ export const IDLE_FARM_WORKER_STATS = {
     speed: 5,
     strength: 5,
     intelligence: 6
+  },
+  [IDLE_FARM_WORKER_TYPE.jumpy]: {
+    speed: 6,
+    strength: 5,
+    intelligence: 5
+  },
+  [IDLE_FARM_WORKER_TYPE.festive]: {
+    speed: 5,
+    strength: 5,
+    intelligence: 5
   }
 } as const;
 
