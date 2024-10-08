@@ -154,7 +154,12 @@ export const IDLE_FARM_ITEMS_EVENT = {
   easterLily:'easter lily',
   worger:'worger',
   energyTank:'energy tank',
-  erngyClover:'erngy clover'
+  erngyClover:'erngy clover',
+  spookyScythe:'spooky scythe',
+  snowyScythe:'snowy scythe',
+  romanticScythe:'romantic scythe',
+  chocolateScythe:'chocolate scythe',
+  miniScythe:'mini scythe'
 } as const;
 
 export const IDLE_FARM_ITEMS_BOX = {
