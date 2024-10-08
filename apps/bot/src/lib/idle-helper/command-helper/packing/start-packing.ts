@@ -9,7 +9,9 @@ import {
   IDLE_FARM_ITEMS_PACKING_MATERIAL,
   IDLE_FARM_ITEMS_PACKING_PAIR,
   IDLE_FARM_ITEMS_REFINED,
+  IDLE_FARM_ITEMS_PRODUCT,
   IDLE_FARM_WORKER_TOKENS,
+  IDLE_FARM_ITEMS_CONSTANTS,
   PREFIX,
   TAX_RATE_BOX
 } from '@idle-helper/constants';
@@ -87,7 +89,7 @@ export const _startPacking = async ({
   const materialBoxType = IDLE_FARM_ITEMS_PACKING_PAIR[materialName];
   const boxPrice = marketItems[materialBoxType].price;
 
-  const workerTokenToUsed: keyof typeof IDLE_FARM_WORKER_TOKENS = materialName in IDLE_FARM_ITEMS_REFINED ? 'rareWorkerTokens' : 'workerTokens';
+  const workerTokenToUsed: keyof typeof IDLE_FARM_WORKER_TOKENS = materialName in IDLE_FARM_ITEMS_REFINED ? 'rareWorkerTokens' : materialName in IDLE_FARM_ITEMS_PRODUCT ? 'epicWorkerTokens' : 'workerTokens';
 
   let event = createIdleFarmCommandListener({
     author,
@@ -313,6 +315,7 @@ async function sendNextCommand({
   let newWorkerTokens = currentWorkerTokens;
   let newMaterialAmount = materialAmount;
   let newBoxAmount = boxAmount;
+  let maxMaterials: number;
 
   if (boxAmount) {
 
@@ -353,7 +356,7 @@ async function sendNextCommand({
 
     const tokensNeeded = Math.ceil(idlonsLeftToTarget / profitsPerToken) + 10; // add 10 more tokens for safety
 
-    const maxBuyAbleMaterial = Math.floor(currentIdlons / materialPrice);
+    const maxBuyAbleMaterial = ((maxMaterials = Math.floor(currentIdlons / materialPrice)) > IDLE_FARM_ITEMS_CONSTANTS.inventoryLimit) ? IDLE_FARM_ITEMS_CONSTANTS.inventoryLimit: maxMaterials;
     const tokensNeedToPackAllMaterial = Math.floor(maxBuyAbleMaterial / 100);
 
     const finalTokenToUse = Math.min(
