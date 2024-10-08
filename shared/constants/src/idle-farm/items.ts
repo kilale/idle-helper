@@ -139,6 +139,7 @@ export const IDLE_FARM_ITEMS_EVENT = {
   tradeTicket: 'trade ticket',
   candyApple:'candy apple',
   romanticChest:'romantic chest',
+  anniversaryLootbox:'anniversary lootbox',
   candyDice:'candy dice',
   lovelyDice:'lovely dice',
   colorfulDice:'colorful dice',
