@@ -368,3 +368,7 @@ export const IDLE_FARM_ITEMS_PACKING_PAIR = {
   ...IDLE_FARM_ITEMS_CONTAINER_TYPE,
   ...IDLE_FARM_ITEMS_SHIP_TYPE
 } as const;
+
+export const IDLE_FARM_ITEMS_CONSTANTS = {
+  inventoryLimit: 50000000
+}
