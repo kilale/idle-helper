@@ -84,12 +84,6 @@ export const IDLE_FARM_ITEMS_PRODUCT = {
   radiationEmitter: 'radiation remitter'
 } as const;
 
-export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
-  ...IDLE_FARM_ITEMS_MATERIAL,
-  ...IDLE_FARM_ITEMS_REFINED,
-  ...IDLE_FARM_ITEMS_PRODUCT
-} as const;
-
 export const IDLE_FARM_ITEMS_ASSEMBLY = {
   soda: 'soda',
   clock: 'clock',
@@ -97,6 +91,13 @@ export const IDLE_FARM_ITEMS_ASSEMBLY = {
   solarPanel: 'solar panel',
   dudirusirtEntity: 'dudirusirt entity',
   microwave: 'microwave'
+} as const;
+
+// add IDLE_FARM_ITEMS_ASSEMBLY once spaceship packing is released.
+export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
+  ...IDLE_FARM_ITEMS_MATERIAL,
+  ...IDLE_FARM_ITEMS_REFINED,
+  ...IDLE_FARM_ITEMS_PRODUCT
 } as const;
 
 export const IDLE_FARM_ITEMS_TOOLS = {
@@ -249,17 +250,27 @@ export const IDLE_FARM_ITEMS_SHIP = {
   radiationEmitterShip: 'radiation emitter ship'
 } as const;
 
+// will be added, once it's released. add this to IDLE_FARM_ITEMS_PACKING_ITEMS
+export const IDLE_FARM_ITEMS_SPACESHIP = {
+  sodaSpaceship: 'soda spaceship',
+  clockSpaceship: 'clock spaceship',
+  flashlightSpaceship: 'flashlight spaceship',
+  solarPanelSpaceship: 'solar panel spaceship',
+  dudirusirtEntitySpaceship: 'dudirusirt entity spaceship',
+  microwaveSpaceship: 'microwave spaceship'
+} as const;
+
 export const IDLE_FARM_ITEMS_PACKING_ITEMS = {
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
-  ...IDLE_FARM_ITEMS_SHIP
+  ...IDLE_FARM_ITEMS_SHIP,
 } as const;
 
 export const IDLE_FARM_WORKER_TOKENS = {
   workerTokens: 'worker tokens',
   rareWorkerTokens: 'rare worker tokens',
-  epicWorkerTokens: 'epic worker tokens'
-
+  epicWorkerTokens: 'epic worker tokens',
+  mythicWorkerTokens: 'mythic worker tokens'
 } as const;
 
 export const IDLE_FARM_ITEMS = {
@@ -273,7 +284,8 @@ export const IDLE_FARM_ITEMS = {
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
   ...IDLE_FARM_ITEMS_SHIP,
-  ...IDLE_FARM_ITEMS_ASSEMBLY
+  ...IDLE_FARM_ITEMS_ASSEMBLY,
+  ...IDLE_FARM_ITEMS_SPACESHIP
 } as const;
 
 export const IDLE_FARM_ITEMS_BOX_TYPE = {
@@ -363,10 +375,21 @@ export const IDLE_FARM_ITEMS_SHIP_TYPE = {
   radiationEmitter: 'radiationEmitterShip'
 } as const;
 
+export const IDLE_FARM_ITEMS_SPACESHIP_TYPE = {
+  soda: 'sodaSpaceship',
+  clock: 'clockSpaceship',
+  flashlight: 'flashlightSpaceship',
+  solarPanel: 'solarPanelSpaceship',
+  dudirusirtEntity: 'dudirusirtEntitySpaceship',
+  microwave: 'microwaveSpaceship'
+} as const;
+
+
 export const IDLE_FARM_ITEMS_PACKING_PAIR = {
   ...IDLE_FARM_ITEMS_BOX_TYPE,
   ...IDLE_FARM_ITEMS_CONTAINER_TYPE,
-  ...IDLE_FARM_ITEMS_SHIP_TYPE
+  ...IDLE_FARM_ITEMS_SHIP_TYPE,
+  ...IDLE_FARM_ITEMS_SPACESHIP_TYPE
 } as const;
 
 export const IDLE_FARM_ITEMS_CONSTANTS = {
