@@ -133,7 +133,28 @@ export const IDLE_FARM_ITEMS_CONSUMABLE = {
 } as const;
 
 export const IDLE_FARM_ITEMS_EVENT = {
- 
+  smallCandle: 'small candle',
+  miniIdlons: 'mini idlons',
+  wishingToken: 'wishing token',
+  tradeTicket: 'trade ticket',
+  candyApple:'candy apple',
+  romanticChest:'romantic chest',
+  candyDice:'candy dice',
+  lovelyDice:'lovely dice',
+  colorfulDice:'colorful dice',
+  miniDice:'mini dice',
+  valentineMuffin:'valentine muffin',
+  chocolateCarrot:'chocolate carrot',
+  workerPopsicle:'worker popsicle',
+  lootboxCake:'lootbox cake',
+  speedBoots:'speed boots',
+  speedGloves:'speed gloves',
+  christmasBell:'christmas bell',
+  partyPopper:'party popper',
+  easterLily:'easter lily',
+  worger:'worger',
+  energyTank:'energy tank',
+  erngyClover:'erngy clover'
 } as const;
 
 export const IDLE_FARM_ITEMS_BOX = {
@@ -242,6 +263,7 @@ export const IDLE_FARM_ITEMS = {
   ...IDLE_FARM_ITEMS_PRODUCT,
   ...IDLE_FARM_ITEMS_TOOLS,
   ...IDLE_FARM_ITEMS_CONSUMABLE,
+  ...IDLE_FARM_ITEMS_EVENT,
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
   ...IDLE_FARM_ITEMS_SHIP,
