@@ -96,6 +96,14 @@ export const IDLE_FARM_ITEMS_ASSEMBLY = {
   microwave: 'microwave'
 } as const;
 
+export const IDLE_FARM_ITEMS_TOOLS = {
+  uselessScythe: 'useless scythe',
+  scythe: 'scythe',
+  rareScythe: 'rare scythe',
+  epicScythe: 'epic scythe',
+  mythicScythe: 'mythic scythe'
+} as const;
+
 export const IDLE_FARM_ITEMS_CONSUMABLE = {
   energyGlass: 'energy glass',
   energyDrink: 'energy drink',
@@ -222,6 +230,7 @@ export const IDLE_FARM_ITEMS = {
   ...IDLE_FARM_ITEMS_MATERIAL,
   ...IDLE_FARM_ITEMS_REFINED,
   ...IDLE_FARM_ITEMS_PRODUCT,
+  ...IDLE_FARM_ITEMS_TOOLS,
   ...IDLE_FARM_ITEMS_CONSUMABLE,
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
