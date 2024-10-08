@@ -129,7 +129,8 @@ export const IDLE_FARM_ITEMS_CONSUMABLE = {
   mythicLootbox: 'mythic lootbox',
   legendaryLootbox: 'legendary lootbox',
   taxCollectorLootbox: 'tax collector lootbox',
-  megaBoost: 'mega boost'
+  megaBoost: 'mega boost',
+  taxCollectorLootbox: 'tax collector lootbox'
 } as const;
 
 export const IDLE_FARM_ITEMS_EVENT = {
