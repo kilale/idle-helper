@@ -148,7 +148,7 @@ export const IDLE_FARM_WORKERS_LEVEL_AMOUNT: Record<number, number> = {
   31: 500000,
   32: 750000,
   33: 1000000,
-  34: 0,
+  34: 1800000,
   35: 0,
   36: 0,
   37: 0,
