@@ -69,6 +69,8 @@ export const IDLE_FARM_FARM_TYPE = {
 
   candyBakery: 'candy bakery',
   snowyFactory: 'snowy factory',
+  eggGenerator: 'egg generator',
+  eggExpander: 'egg expander',
 
   workerTokenFarm: 'worker token farm',
   timeFarm: 'time farm',
