@@ -370,5 +370,6 @@ export const IDLE_FARM_ITEMS_PACKING_PAIR = {
 } as const;
 
 export const IDLE_FARM_ITEMS_CONSTANTS = {
-  inventoryLimit: 50000000
+  inventoryLimit: 200000000,
+  toolLimit: 50000000
 }
