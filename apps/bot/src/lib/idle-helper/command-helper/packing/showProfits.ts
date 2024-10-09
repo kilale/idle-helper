@@ -10,6 +10,7 @@ import {
   IDLE_FARM_ITEMS_MATERIAL,
   IDLE_FARM_ITEMS_PACKING_PAIR,
   IDLE_FARM_ITEMS_REFINED,
+  IDLE_FARM_ITEMS_PRODUCT,
   PREFIX,
   TAX_RATE_BOX,
   TAX_RATE_LABEL
@@ -41,7 +42,7 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
   const marketItems = await infoService.getMarketItems();
   const taxValueToUse = taxValue ?? TAX_RATE_BOX[user.config.donorTier];
 
-  const _generateProfits = (items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED>) => generateProfits({
+  const _generateProfits = (items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED & typeof IDLE_FARM_ITEMS_PRODUCT>) => generateProfits({
     items,
     taxValue: taxValueToUse,
     marketItems,
@@ -50,7 +51,8 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
 
   const materialProfits = _generateProfits(IDLE_FARM_ITEMS_MATERIAL);
   const refinedProfits = _generateProfits(IDLE_FARM_ITEMS_REFINED);
-  const profits = [...materialProfits, ...refinedProfits];
+  const productProfits = _generateProfits(IDLE_FARM_ITEMS_PRODUCT);
+  const profits = [...materialProfits, ...refinedProfits, ...productProfits];
 
   const lastUpdatedAt = profits.sort(
     (a, b) => b.lastUpdated?.getTime() - a.lastUpdated?.getTime()
@@ -61,10 +63,14 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
   const top3RefinedProfits = refinedProfits
     .sort((a, b) => b.profits - a.profits)
     .slice(0, 3);
+    const top3ProductProfits = productProfits
+    .sort((a, b) => b.profits - a.profits)
+    .slice(0, 3);
   const embed = generateEmbed({
     packingMultiplier,
     taxValue: taxValueToUse,
     lastUpdatedAt,
+    products: top3ProductProfits,
     refined: top3RefinedProfits,
     materials: top3MaterialProfits
   });
@@ -107,6 +113,7 @@ type TProfits = {
 interface IGenerateEmbed {
   materials: TProfits[];
   refined: TProfits[];
+  products: TProfits[];
   packingMultiplier: number;
   taxValue: ValuesOf<typeof TAX_RATE_BOX>;
   lastUpdatedAt?: Date;
@@ -115,6 +122,7 @@ interface IGenerateEmbed {
 const generateEmbed = ({
   materials,
   refined,
+  products,
   packingMultiplier,
   taxValue,
   lastUpdatedAt
@@ -126,7 +134,8 @@ const generateEmbed = ({
 
   const rows = [
     {label: 'Materials', items: materials},
-    {label: 'Refined', items: refined}
+    {label: 'Refined', items: refined},
+    {label: 'Products', items: products}
   ];
 
   for (const row of rows) {
