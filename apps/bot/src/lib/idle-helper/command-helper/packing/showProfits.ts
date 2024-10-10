@@ -11,6 +11,7 @@ import {
   IDLE_FARM_ITEMS_PACKING_PAIR,
   IDLE_FARM_ITEMS_REFINED,
   IDLE_FARM_ITEMS_PRODUCT,
+  IDLE_FARM_ITEMS_ASSEMBLY,
   PREFIX,
   TAX_RATE_BOX,
   TAX_RATE_LABEL
@@ -52,7 +53,8 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
   const materialProfits = _generateProfits(IDLE_FARM_ITEMS_MATERIAL);
   const refinedProfits = _generateProfits(IDLE_FARM_ITEMS_REFINED);
   const productProfits = _generateProfits(IDLE_FARM_ITEMS_PRODUCT);
-  const profits = [...materialProfits, ...refinedProfits, ...productProfits];
+  const assemblyProfits = _generateProfits(IDLE_FARM_ITEMS_ASSEMBLY);
+  const profits = [...materialProfits, ...refinedProfits, ...productProfits, ...assemblyProfits];
 
   const lastUpdatedAt = profits.sort(
     (a, b) => b.lastUpdated?.getTime() - a.lastUpdated?.getTime()
@@ -63,13 +65,17 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
   const top3RefinedProfits = refinedProfits
     .sort((a, b) => b.profits - a.profits)
     .slice(0, 3);
-    const top3ProductProfits = productProfits
+  const top3ProductProfits = productProfits
+    .sort((a, b) => b.profits - a.profits)
+    .slice(0, 3);
+  const top3AssemblyProfits = assemblyProfits
     .sort((a, b) => b.profits - a.profits)
     .slice(0, 3);
   const embed = generateEmbed({
     packingMultiplier,
     taxValue: taxValueToUse,
     lastUpdatedAt,
+    assembly: top3AssemblyProfits,
     products: top3ProductProfits,
     refined: top3RefinedProfits,
     materials: top3MaterialProfits
@@ -114,6 +120,7 @@ interface IGenerateEmbed {
   materials: TProfits[];
   refined: TProfits[];
   products: TProfits[];
+  assembly: TProfits[];
   packingMultiplier: number;
   taxValue: ValuesOf<typeof TAX_RATE_BOX>;
   lastUpdatedAt?: Date;
@@ -123,6 +130,7 @@ const generateEmbed = ({
   materials,
   refined,
   products,
+  assembly,
   packingMultiplier,
   taxValue,
   lastUpdatedAt
@@ -135,7 +143,8 @@ const generateEmbed = ({
   const rows = [
     {label: 'Materials', items: materials},
     {label: 'Refined', items: refined},
-    {label: 'Products', items: products}
+    {label: 'Products', items: products},
+    {label: 'Assembly', items: assembly}
   ];
 
   for (const row of rows) {

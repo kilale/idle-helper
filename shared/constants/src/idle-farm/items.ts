@@ -93,11 +93,11 @@ export const IDLE_FARM_ITEMS_ASSEMBLY = {
   microwave: 'microwave'
 } as const;
 
-// add IDLE_FARM_ITEMS_ASSEMBLY once spaceship packing is released.
 export const IDLE_FARM_ITEMS_PACKING_MATERIAL = {
   ...IDLE_FARM_ITEMS_MATERIAL,
   ...IDLE_FARM_ITEMS_REFINED,
-  ...IDLE_FARM_ITEMS_PRODUCT
+  ...IDLE_FARM_ITEMS_PRODUCT,
+  ...IDLE_FARM_ITEMS_ASSEMBLY
 } as const;
 
 export const IDLE_FARM_ITEMS_TOOLS = {
@@ -250,7 +250,6 @@ export const IDLE_FARM_ITEMS_SHIP = {
   radiationEmitterShip: 'radiation emitter ship'
 } as const;
 
-// will be added, once it's released. add this to IDLE_FARM_ITEMS_PACKING_ITEMS
 export const IDLE_FARM_ITEMS_SPACESHIP = {
   sodaSpaceship: 'soda spaceship',
   clockSpaceship: 'clock spaceship',
@@ -264,6 +263,7 @@ export const IDLE_FARM_ITEMS_PACKING_ITEMS = {
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
   ...IDLE_FARM_ITEMS_SHIP,
+  ...IDLE_FARM_ITEMS_SPACESHIP
 } as const;
 
 export const IDLE_FARM_WORKER_TOKENS = {
@@ -278,13 +278,13 @@ export const IDLE_FARM_ITEMS = {
   ...IDLE_FARM_ITEMS_MATERIAL,
   ...IDLE_FARM_ITEMS_REFINED,
   ...IDLE_FARM_ITEMS_PRODUCT,
+  ...IDLE_FARM_ITEMS_ASSEMBLY,
   ...IDLE_FARM_ITEMS_TOOLS,
   ...IDLE_FARM_ITEMS_CONSUMABLE,
   ...IDLE_FARM_ITEMS_EVENT,
   ...IDLE_FARM_ITEMS_BOX,
   ...IDLE_FARM_ITEMS_CONTAINER,
   ...IDLE_FARM_ITEMS_SHIP,
-  ...IDLE_FARM_ITEMS_ASSEMBLY,
   ...IDLE_FARM_ITEMS_SPACESHIP
 } as const;
 

@@ -9,7 +9,8 @@ import {
   IDLE_FARM_ITEMS_ASSEMBLY,
   IDLE_FARM_ITEMS_MATERIAL,
   IDLE_FARM_ITEMS_PRODUCT,
-  IDLE_FARM_ITEMS_REFINED
+  IDLE_FARM_ITEMS_REFINED,
+  IDLE_FARM_ITEMS_TOOLS
 } from '@idle-helper/constants';
 import {typedObjectEntries} from '@idle-helper/utils';
 
@@ -66,6 +67,10 @@ const categories: TCategory[] = [
   {
     items: IDLE_FARM_ITEMS_ASSEMBLY,
     label: 'Assemblies'
+  },
+  {
+    items: IDLE_FARM_ITEMS_TOOLS,
+    label: 'Tools'
   }
 ];
 
