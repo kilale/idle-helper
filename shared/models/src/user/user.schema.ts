@@ -77,6 +77,7 @@ export const userSchema = new Schema<IUser>({
     lastClaimedAt: Date,
     reminderHours: [Number],
     itemsUsed: {
+      timeDilator: {type: Number, default: 0},
       timeCompressor: {type: Number, default: 0},
       timeSpeeder: {type: Number, default: 0}
     }

@@ -7,7 +7,7 @@ import {idleUseTimeDilator} from '../../../../lib/idle-farm/use/time-dilator';
 
 export default <PrefixCommand>{
   name: 'idleTimeDilator',
-  commands: ['use time diltor'],
+  commands: ['use time dilator'],
   preCheck: {
     userAccOff: USER_ACC_OFF_ACTIONS.abort,
     userNotRegistered: USER_NOT_REGISTERED_ACTIONS.abort

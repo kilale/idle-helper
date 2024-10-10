@@ -46,6 +46,7 @@ export const getLastClaimEmbed = ({userAccount, author}: IGetEmbed) => {
   });
   const timeSpeederUsed = userAccount.farms.itemsUsed.timeSpeeder;
   const timeCompressorUsed = userAccount.farms.itemsUsed.timeCompressor;
+  const timeDilatorUsed = userAccount.farms.itemsUsed.timeDilator;
 
   const duration = userAccount.farms.lastClaimedAt
     ? Date.now() - userAccount.farms.lastClaimedAt.getTime()
@@ -54,7 +55,8 @@ export const getLastClaimEmbed = ({userAccount, author}: IGetEmbed) => {
   const totalDuration =
     duration +
     timeSpeederUsed * IDLE_FARM_TIME_BOOSTER_DURATION.timeSpeeder +
-    timeCompressorUsed * IDLE_FARM_TIME_BOOSTER_DURATION.timeCompressor;
+    timeCompressorUsed * IDLE_FARM_TIME_BOOSTER_DURATION.timeCompressor +
+    timeDilatorUsed * IDLE_FARM_TIME_BOOSTER_DURATION.timeDilator;
 
   embed.setDescription(
     `Total idling: **${
@@ -69,7 +71,8 @@ export const getLastClaimEmbed = ({userAccount, author}: IGetEmbed) => {
         duration ? convertMsToHumanReadableString(duration) : ' - '
       }`,
       `${BOT_EMOJI.items.timeSpeeder} **Time Speeder:** ${timeSpeederUsed}`,
-      `${BOT_EMOJI.items.timeCompressor} **Time Compressor:** ${timeCompressorUsed}`
+      `${BOT_EMOJI.items.timeCompressor} **Time Compressor:** ${timeCompressorUsed}`,
+      `${BOT_EMOJI.items.timeDilator} **Time Dilator:** ${timeDilatorUsed}`
     ].join('\n')
   });
 

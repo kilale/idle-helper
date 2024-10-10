@@ -66,6 +66,7 @@ export interface IUser {
     lastClaimedAt: Date;
     reminderHours: number[];
     itemsUsed: {
+      timeDilator: number,
       timeCompressor: number;
       timeSpeeder: number;
     };
