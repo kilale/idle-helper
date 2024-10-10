@@ -305,6 +305,28 @@ const calcTotalUsers = async () => {
   return dbUser.estimatedDocumentCount({});
 };
 
+interface IAddTimeDilatorUsage {
+  userId: string;
+  amount: number;
+}
+
+const addTimeDilatorUsage = async ({
+  userId,
+  amount
+}: IAddTimeDilatorUsage) => {
+  const user = await dbUser.findOneAndUpdate(
+    {userId},
+    {
+      $inc: {
+        'farms.itemsUsed.timeDilator': amount
+      }
+    },
+    {
+      new: true
+    }
+  );
+  return user ?? null;
+};
 interface IAddTimeCompressorUsage {
   userId: string;
   amount: number;
@@ -498,6 +520,7 @@ export const userService = {
   updateIdleFarmDonorTier,
   getTopWorkers,
   calcTotalUsers,
+  addTimeDilatorUsage,
   addTimeCompressorUsage,
   addTimeSpeederUsage,
   registerReminder,
