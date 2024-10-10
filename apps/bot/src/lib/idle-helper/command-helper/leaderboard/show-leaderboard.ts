@@ -89,17 +89,22 @@ const SELECTOR_LABEL = {
   [IDLE_FARM_WORKER_TYPE.masterful]: {
     emoji: BOT_EMOJI.worker.masterful,
     label: 'Masterful'
+  },
+  [IDLE_FARM_WORKER_TYPE.guru]: {
+    emoji: BOT_EMOJI.worker.guru,
+    label: 'GURU'
   }
 };
 
 const PAGES_TITLE = {
-  [IDLE_FARM_WORKER_TYPE.useless]: `${BOT_EMOJI.worker.useless} ${BOT_EMOJI.workerText.useless1}${BOT_EMOJI.workerText.useless2}${BOT_EMOJI.workerText.useless3}${BOT_EMOJI.workerText.useless4}${BOT_EMOJI.workerText.useless5}${BOT_EMOJI.workerText.useless6}`,
-  [IDLE_FARM_WORKER_TYPE.deficient]: `${BOT_EMOJI.worker.deficient} ${BOT_EMOJI.workerText.deficient1}${BOT_EMOJI.workerText.deficient2}${BOT_EMOJI.workerText.deficient3}${BOT_EMOJI.workerText.deficient4}${BOT_EMOJI.workerText.deficient5}${BOT_EMOJI.workerText.deficient6}${BOT_EMOJI.workerText.deficient7}`,
-  [IDLE_FARM_WORKER_TYPE.common]: `${BOT_EMOJI.worker.common} ${BOT_EMOJI.workerText.common1}${BOT_EMOJI.workerText.common2}${BOT_EMOJI.workerText.common3}${BOT_EMOJI.workerText.common4}${BOT_EMOJI.workerText.common5}`,
-  [IDLE_FARM_WORKER_TYPE.talented]: `${BOT_EMOJI.worker.talented} ${BOT_EMOJI.workerText.talented1}${BOT_EMOJI.workerText.talented2}${BOT_EMOJI.workerText.talented3}${BOT_EMOJI.workerText.talented4}${BOT_EMOJI.workerText.talented5}${BOT_EMOJI.workerText.talented6}${BOT_EMOJI.workerText.talented7}`,
-  [IDLE_FARM_WORKER_TYPE.expert]: `${BOT_EMOJI.worker.expert} ${BOT_EMOJI.workerText.expert1}${BOT_EMOJI.workerText.expert2}${BOT_EMOJI.workerText.expert3}${BOT_EMOJI.workerText.expert4}${BOT_EMOJI.workerText.expert5}`,
-  [IDLE_FARM_WORKER_TYPE.wise]: `${BOT_EMOJI.worker.wise} ${BOT_EMOJI.workerText.wise1}${BOT_EMOJI.workerText.wise2}${BOT_EMOJI.workerText.wise3}${BOT_EMOJI.workerText.wise4}`,
-  [IDLE_FARM_WORKER_TYPE.masterful]: `${BOT_EMOJI.worker.masterful} ${BOT_EMOJI.workerText.masterful1}${BOT_EMOJI.workerText.masterful2}${BOT_EMOJI.workerText.masterful3}${BOT_EMOJI.workerText.masterful4}${BOT_EMOJI.workerText.masterful5}${BOT_EMOJI.workerText.masterful6}${BOT_EMOJI.workerText.masterful7}`
+  [IDLE_FARM_WORKER_TYPE.useless]: `${BOT_EMOJI.animatedWorker.useless} ${BOT_EMOJI.workerText.useless1}${BOT_EMOJI.workerText.useless2}${BOT_EMOJI.workerText.useless3}${BOT_EMOJI.workerText.useless4}${BOT_EMOJI.workerText.useless5}${BOT_EMOJI.workerText.useless6}`,
+  [IDLE_FARM_WORKER_TYPE.deficient]: `${BOT_EMOJI.animatedWorker.deficient} ${BOT_EMOJI.workerText.deficient1}${BOT_EMOJI.workerText.deficient2}${BOT_EMOJI.workerText.deficient3}${BOT_EMOJI.workerText.deficient4}${BOT_EMOJI.workerText.deficient5}${BOT_EMOJI.workerText.deficient6}${BOT_EMOJI.workerText.deficient7}`,
+  [IDLE_FARM_WORKER_TYPE.common]: `${BOT_EMOJI.animatedWorker.common} ${BOT_EMOJI.workerText.common1}${BOT_EMOJI.workerText.common2}${BOT_EMOJI.workerText.common3}${BOT_EMOJI.workerText.common4}${BOT_EMOJI.workerText.common5}`,
+  [IDLE_FARM_WORKER_TYPE.talented]: `${BOT_EMOJI.animatedWorker.talented} ${BOT_EMOJI.workerText.talented1}${BOT_EMOJI.workerText.talented2}${BOT_EMOJI.workerText.talented3}${BOT_EMOJI.workerText.talented4}${BOT_EMOJI.workerText.talented5}${BOT_EMOJI.workerText.talented6}${BOT_EMOJI.workerText.talented7}`,
+  [IDLE_FARM_WORKER_TYPE.expert]: `${BOT_EMOJI.animatedWorker.expert} ${BOT_EMOJI.workerText.expert1}${BOT_EMOJI.workerText.expert2}${BOT_EMOJI.workerText.expert3}${BOT_EMOJI.workerText.expert4}${BOT_EMOJI.workerText.expert5}`,
+  [IDLE_FARM_WORKER_TYPE.wise]: `${BOT_EMOJI.animatedWorker.wise} ${BOT_EMOJI.workerText.wise1}${BOT_EMOJI.workerText.wise2}${BOT_EMOJI.workerText.wise3}${BOT_EMOJI.workerText.wise4}`,
+  [IDLE_FARM_WORKER_TYPE.masterful]: `${BOT_EMOJI.animatedWorker.masterful} ${BOT_EMOJI.workerText.masterful1}${BOT_EMOJI.workerText.masterful2}${BOT_EMOJI.workerText.masterful3}${BOT_EMOJI.workerText.masterful4}${BOT_EMOJI.workerText.masterful5}${BOT_EMOJI.workerText.masterful6}${BOT_EMOJI.workerText.masterful7}`,
+  [IDLE_FARM_WORKER_TYPE.guru]: `${BOT_EMOJI.animatedWorker.guru} ${BOT_EMOJI.workerText.guru1}${BOT_EMOJI.workerText.guru2}${BOT_EMOJI.workerText.guru3}${BOT_EMOJI.workerText.guru4}`
 };
 
 interface IGenerateEmbed {

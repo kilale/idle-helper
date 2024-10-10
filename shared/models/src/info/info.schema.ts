@@ -12,7 +12,13 @@ export const infoSchema = new Schema<IInfo>({
     talented: {type: Schema.Types.Mixed},
     wise: {type: Schema.Types.Mixed},
     expert: {type: Schema.Types.Mixed},
-    masterful: {type: Schema.Types.Mixed}
+    masterful: {type: Schema.Types.Mixed},
+    guru: {type: Schema.Types.Mixed},
+    jumpy: {type: Schema.Types.Mixed},
+    spooky: {type: Schema.Types.Mixed},
+    snowy: {type: Schema.Types.Mixed},
+    lovely: {type: Schema.Types.Mixed},
+    festive: {type: Schema.Types.Mixed}
   },
   market: typedObjectEntries(IDLE_FARM_ITEMS).reduce((acc, [key]) => {
     acc[key] = {

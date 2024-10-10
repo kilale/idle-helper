@@ -28,6 +28,7 @@ export const _listWorkers = async ({
 };
 
 const ORDER = [
+  IDLE_FARM_WORKER_TYPE.guru,
   IDLE_FARM_WORKER_TYPE.masterful,
   IDLE_FARM_WORKER_TYPE.expert,
   IDLE_FARM_WORKER_TYPE.wise,
@@ -35,8 +36,11 @@ const ORDER = [
   IDLE_FARM_WORKER_TYPE.common,
   IDLE_FARM_WORKER_TYPE.deficient,
   IDLE_FARM_WORKER_TYPE.useless,
+  IDLE_FARM_WORKER_TYPE.jumpy,
   IDLE_FARM_WORKER_TYPE.spooky,
-  IDLE_FARM_WORKER_TYPE.snowy
+  IDLE_FARM_WORKER_TYPE.snowy,
+  IDLE_FARM_WORKER_TYPE.lovely,
+  IDLE_FARM_WORKER_TYPE.festive
 ];
 
 interface IGetEmbed {
@@ -59,7 +63,7 @@ const getEmbed = ({userAccount, author}: IGetEmbed) => {
   if (userAccount.lastUpdated.workers) {
     for (const workerType of ORDER) {
       const worker = userAccount.workers[workerType];
-      const emoji = BOT_EMOJI.worker[workerType];
+      const emoji = BOT_EMOJI.animatedWorker[workerType];
       const levelEmoji = BOT_EMOJI.other.level;
       const level = worker?.level ?? 0;
       const power = calcWorkerPower({
@@ -72,7 +76,7 @@ const getEmbed = ({userAccount, author}: IGetEmbed) => {
           `${emoji} ${levelEmoji} ${level} :boom: ${power.toFixed(2)}`
         );
       } else {
-        workers.push(`${BOT_EMOJI.worker[workerType]} -`);
+        workers.push(`${BOT_EMOJI.animatedWorker[workerType]} -`);
       }
     }
 

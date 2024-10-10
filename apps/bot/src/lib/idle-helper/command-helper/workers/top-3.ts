@@ -48,7 +48,7 @@ const getEmbed = ({userAccount, author}: IGetEmbed) => {
     workers.push('');
 
     for (const worker of top3Workers) {
-      const emoji = BOT_EMOJI.worker[worker.type];
+      const emoji = BOT_EMOJI.animatedWorker[worker.type];
       workers.push(
         `${emoji} ${BOT_EMOJI.other.level} ${
           worker.level
