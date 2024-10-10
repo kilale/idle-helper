@@ -230,7 +230,7 @@ export const IDLE_FARM_ITEMS_CONTAINER = {
   bitterSpiceContainer: 'bitter spice container',
   naturalFertilizerContainer: 'natural fertilizer container',
   saltySpiceContainer: 'salty spice container',
-  pasticContainer: 'plastic container'
+  plasticContainer: 'plastic container'
 } as const;
 
 export const IDLE_FARM_ITEMS_SHIP = {

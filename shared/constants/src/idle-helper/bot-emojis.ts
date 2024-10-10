@@ -75,6 +75,7 @@ const ITEMS = {
   battery: '<:battery:1191407587275591730>',
   clock: '<:clock:1191407592312946708>',
   flashlight: '<:flashlight:1191407601762713662>',
+  timeDilator: '<:timespeeder:1140204798080204851>',
 
 
   woodBox: '<:box:1140206786134167562>',
@@ -182,7 +183,11 @@ export const BOT_EMOJI = {
     deficient: '<:deficientworker:1134134030749667368>',
     common: '<:commonworker:1134134037724794950>',
     spooky: '<:spookyworker:1166532556364197948>',
-    snowy: '<:snowyworker:1180378368336744509>'
+    snowy: '<:snowyworker:1180378368336744509>',
+    guru: '<:guruworker:1245446975768498344>',
+    lovely: '<:lovelyworker:1205973057592885309>',
+    jumpy: '<:jumpyworker:1220468344314920970>',
+    festive: '<:festiveworker:1272649116840755311>'
   },
   animatedWorker: {
     wise: '<a:wiseworker:1134134003897737236>',
@@ -193,7 +198,11 @@ export const BOT_EMOJI = {
     deficient: '<a:deficientworker:1134134033958322197>',
     common: '<a:commonworker:1134134040253968394>',
     spooky: '<a:spookyworker:1166532070298877963>',
-    snowy: '<a:snowyworker:1180378501610754048>'
+    snowy: '<a:snowyworker:1180378501610754048>',
+    guru: '<a:guruworker:1245446975768498344>',
+    lovely: '<a:lovelyworker:1205973057592885309>',
+    jumpy: '<a:jumpyworker:1220468344314920970>',
+    festive: '<a:festiveworker:1272649116840755311>'
   },
   other: {
     farm: '<:farm:1134144211344703531>',
@@ -244,7 +253,35 @@ export const BOT_EMOJI = {
     masterful4: '<:masterful4:1147731050496282684>',
     masterful5: '<:masterful5:1147731045144346784>',
     masterful6: '<:masterful6:1147731038420877323>',
-    masterful7: '<:masterful7:1147731033496760360>'
+    masterful7: '<:masterful7:1147731033496760360>',
+    guru1: '<:guru1:1291233637416833156>',
+    guru2: '<:guru2:1291233638792298586>',
+    guru3: '<:guru3:1291233640285732907>',
+    guru4: '<:guru4:1291231486695047241>',
+    festive1: '<:festive1:1272649134112772217>',
+    festive2: '<:festive2:1272649136126165040>',
+    festive3: '<:festive3:1272649138001154202>',
+    festive4: '<:festive4:1272649139376750694>',
+    festive5: '<:festive5:1272649140802818058>',
+    festive6: '<:festive6:1272649142283272205>',
+    jumpy1: '<:jumpy1:1220468346412339332>',
+    jumpy2: '<:jumpy2:1220468348131741746>',
+    jumpy3: '<:jumpy3:1220468349671313479>',
+    jumpy4: '<:jumpy4:1220469418904125622>',
+    lovely1: '<:lovely1:1205995109242380349>',
+    lovely2: '<:lovely2:1205995110169448529>',
+    lovely3: '<:lovely3:1205995111842979861>',
+    lovely4: '<:lovely4:1205995113491472415>',
+    lovely5: '<:lovely5:1205995114783178894>',
+    snowy1: '<:snowy1:1179163914097922068>',
+    snowy2: '<:snowy2:1179163917344329779>',
+    snowy3: '<:snowy3:1179163918749409443>',
+    snowy4: '<:snowy4:1179163920255176727>',
+    spooky1: '<:spooky1:1161868806705131651>',
+    spooky2: '<:spooky2:1161868808059891742>',
+    spooky3: '<:spooky3:1161868810345787452>',
+    spooky4: '<:spooky4:1161869407379800194>',
+    spooky5: '<:spooky5:1161869652025163807>',
   },
   farm: {
     forest: ITEMS.wood,
@@ -318,6 +355,10 @@ export const BOT_IMAGE_URL = {
     masterful:
       'https://cdn.discordapp.com/emojis/1134134019429249034.webp?size=96&quality=lossless',
     spooky: 'https://cdn.discordapp.com/emojis/1161136523815686216.webp?size=96&quality=lossless',
-    snowy: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless'
+    snowy: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless',
+    guru: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless',
+    lovely: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless',
+    jumpy: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless',
+    festive: 'https://cdn.discordapp.com/emojis/1180378368336744509.webp?size=240&quality=lossless'
   }
 };
