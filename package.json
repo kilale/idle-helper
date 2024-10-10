@@ -1,6 +1,6 @@
 {
   "name": "idle-helper",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "An unofficial Discord IDLE FARM helper bot",
   "main": "dist/index.js",
   "private": true,
