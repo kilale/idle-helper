@@ -90,7 +90,6 @@ export const _startPacking = async ({
   const materialBoxType = IDLE_FARM_ITEMS_PACKING_PAIR[materialName];
   const boxPrice = marketItems[materialBoxType].price;
 
-  // add mythic worker tokens once spaceships are released. Maybe rework the whole condition tree. 
   const workerTokenToUsed: keyof typeof IDLE_FARM_WORKER_TOKENS = materialName in IDLE_FARM_ITEMS_REFINED ? 'rareWorkerTokens' : materialName in IDLE_FARM_ITEMS_PRODUCT ? 'epicWorkerTokens' : materialName in IDLE_FARM_ITEMS_ASSEMBLY ? 'mythicWorkerTokens' : 'workerTokens';
   
   let event = createIdleFarmCommandListener({
