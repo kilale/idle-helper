@@ -446,10 +446,20 @@ export const BOT_EMOJI = {
     clockAssembly: ITEMS.clock,
     flashlightAssembly: ITEMS.flashlight,
     solarPanelFactory: ITEMS.solarpanel,
+    sodaBusiness: ITEMS.soda,
     scytheSpawner: ITEMS.rareScythe,
+    
+    dudirusirtGigafactory: ITEMS.dudirusirtEntity,
+    microwaveAssembly: ITEMS.microwave,
 
     workerTokenFarm: ITEMS.workerTokens,
     lootboxFarm: ITEMS.uselessLootbox,
+    timeFarm: ITEMS.timeSpeeder,
+    energyFarm: ITEMS.energyDrink,
+
+    eggGenerator: ITEMS.chocolateEgg,
+    eggExpander: ITEMS.bigEgg,
+
     pumpkinFarm: ITEMS.pumpkin,
     pumpkinCarver: ITEMS.carvedPumpkin,
 
