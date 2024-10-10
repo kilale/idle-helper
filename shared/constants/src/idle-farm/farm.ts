@@ -1,4 +1,4 @@
-import ms from 'ms';
+import * as ms from 'ms';
 
 export const IDLE_FARM_FARM_TYPE = {
   forest: 'forest',
