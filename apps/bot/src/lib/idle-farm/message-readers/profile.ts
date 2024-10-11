@@ -58,5 +58,15 @@ const LEAGUE_LABEL = {
   [IDLE_FARM_LEAGUE.glass2]: 'Glass league II',
   [IDLE_FARM_LEAGUE.glass3]: 'Glass league III',
   [IDLE_FARM_LEAGUE.glass4]: 'Glass league IV',
-  [IDLE_FARM_LEAGUE.glass5]: 'Glass league V'
+  [IDLE_FARM_LEAGUE.glass5]: 'Glass league V',
+  [IDLE_FARM_LEAGUE.wire1]: 'Wire league I',
+  [IDLE_FARM_LEAGUE.wire2]: 'Wire league II',
+  [IDLE_FARM_LEAGUE.wire3]: 'Wire league III',
+  [IDLE_FARM_LEAGUE.wire4]: 'Wire league IV',
+  [IDLE_FARM_LEAGUE.wire5]: 'Wire league V',
+  [IDLE_FARM_LEAGUE.flashlight1]: 'Flashlight league I',
+  [IDLE_FARM_LEAGUE.flashlight2]: 'Flashlight league II',
+  [IDLE_FARM_LEAGUE.flashlight3]: 'Flashlight league III',
+  [IDLE_FARM_LEAGUE.flashlight4]: 'Flashlight league IV',
+  [IDLE_FARM_LEAGUE.flashlight5]: 'Flashlight league V',
 } as Record<keyof typeof IDLE_FARM_LEAGUE, string>;
