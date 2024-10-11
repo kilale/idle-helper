@@ -57,6 +57,15 @@ export default <SlashCommand>{
               .toLowerCase()
           )
           .setDescription(IDLE_FARM_RANDOM_EVENTS_NAME.packing)
+      )
+      .addStringOption((option) =>
+        option
+          .setName(
+            IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector
+              .replaceAll(' ', '-')
+              .toLowerCase()
+          )
+          .setDescription(IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector)
       ),
   permissions: [PermissionsBitField.Flags.ManageGuild],
   execute: async (client, interaction) => {
@@ -72,6 +81,9 @@ export default <SlashCommand>{
     const lucky = interaction.options.getString(
       IDLE_FARM_RANDOM_EVENTS_NAME.lucky.replaceAll(' ', '-').toLowerCase()
     );
+    const taxCollector = interaction.options.getString(
+      IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector.replaceAll(' ', '-').toLowerCase()
+    );
 
     const serverAccount = await serverService.updateRandomEvents({
       serverId: interaction.guildId!,
@@ -79,7 +91,8 @@ export default <SlashCommand>{
         worker: worker ? (worker === 'clear' ? null : worker) : undefined,
         energy: energy ? (energy === 'clear' ? null : energy) : undefined,
         lucky: lucky ? (lucky === 'clear' ? null : lucky) : undefined,
-        packing: packing ? (packing === 'clear' ? null : packing) : undefined
+        packing: packing ? (packing === 'clear' ? null : packing) : undefined,
+        taxCollector: taxCollector ? (taxCollector === 'clear' ? null : taxCollector) : undefined
       }
     });
     if (!serverAccount) return null;
