@@ -55,11 +55,23 @@ const fromRedis = (value: string): IInfo => {
       [IDLE_FARM_WORKER_TYPE.masterful]: transformWorkerPower(
         parsed?.workerPower?.masterful
       ),
+      [IDLE_FARM_WORKER_TYPE.guru]: transformWorkerPower(
+        parsed?.workerPower?.guru
+      ),
       [IDLE_FARM_WORKER_TYPE.spooky]: transformWorkerPower(
         parsed?.workerPower?.spooky
       ),
       [IDLE_FARM_WORKER_TYPE.snowy]: transformWorkerPower(
         parsed?.workerPower?.snowy
+      ),
+      [IDLE_FARM_WORKER_TYPE.jumpy]: transformWorkerPower(
+        parsed?.workerPower?.jumpy
+      ),
+      [IDLE_FARM_WORKER_TYPE.lovely]: transformWorkerPower(
+        parsed?.workerPower?.lovely
+      ),
+      [IDLE_FARM_WORKER_TYPE.festive]: transformWorkerPower(
+        parsed?.workerPower?.festive
       )
     },
     market: typedObjectEntries(parsed?.market ?? {}).reduce(
@@ -77,8 +89,12 @@ const fromRedis = (value: string): IInfo => {
       [IDLE_FARM_WORKER_TYPE.wise]: parsed?.leaderboard?.wise ?? [],
       [IDLE_FARM_WORKER_TYPE.expert]: parsed?.leaderboard?.expert ?? [],
       [IDLE_FARM_WORKER_TYPE.masterful]: parsed?.leaderboard?.masterful ?? [],
+      [IDLE_FARM_WORKER_TYPE.guru]: parsed?.leaderboard?.guru ?? [],
       [IDLE_FARM_WORKER_TYPE.spooky]: parsed?.leaderboard?.spooky ?? [],
-      [IDLE_FARM_WORKER_TYPE.snowy]: parsed?.leaderboard?.snowy ?? []
+      [IDLE_FARM_WORKER_TYPE.snowy]: parsed?.leaderboard?.snowy ?? [],
+      [IDLE_FARM_WORKER_TYPE.jumpy]: parsed?.leaderboard?.jumpy ?? [],
+      [IDLE_FARM_WORKER_TYPE.lovely]: parsed?.leaderboard?.lovely ?? [],
+      [IDLE_FARM_WORKER_TYPE.festive]: parsed?.leaderboard?.festive ?? [],
     }
   };
 };

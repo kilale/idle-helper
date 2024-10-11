@@ -16,11 +16,11 @@ export default <BotMessage>{
     });
     if (!serverProfile) return;
     const randomEvent = serverProfile.settings.randomEvent;
-    if (!randomEvent.taxCollector) return;
+    if (!randomEvent.taxcollector) return;
     await djsMessageHelper.send({
       client,
       options: {
-        content: randomEvent.taxCollector
+        content: randomEvent.taxcollector
       },
       channelId: message.channel.id
     });

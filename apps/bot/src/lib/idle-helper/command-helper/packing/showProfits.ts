@@ -43,7 +43,7 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
   const marketItems = await infoService.getMarketItems();
   const taxValueToUse = taxValue ?? TAX_RATE_BOX[user.config.donorTier];
 
-  const _generateProfits = (items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED & typeof IDLE_FARM_ITEMS_PRODUCT>) => generateProfits({
+  const _generateProfits = (items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED & typeof IDLE_FARM_ITEMS_PRODUCT & typeof IDLE_FARM_ITEMS_ASSEMBLY>) => generateProfits({
     items,
     taxValue: taxValueToUse,
     marketItems,

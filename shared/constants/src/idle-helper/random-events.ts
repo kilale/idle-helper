@@ -3,7 +3,7 @@ export const IDLE_FARM_RANDOM_EVENTS = {
   worker: 'worker',
   energy: 'energy',
   lucky: 'lucky',
-  taxCollector: 'tax collector'
+  taxcollector: 'taxcollector'
 } as const;
 
 export const IDLE_FARM_RANDOM_EVENTS_NAME: Record<
@@ -14,7 +14,7 @@ export const IDLE_FARM_RANDOM_EVENTS_NAME: Record<
   packing: 'Packing',
   energy: 'Energy',
   lucky: 'Lucky Reward',
-  taxCollector: 'Tax Collector'
+  taxcollector: 'Tax Collector'
 } as const;
 
 export const IDLE_FARM_RANDOM_EVENTS_COMMAND: Record<
@@ -25,5 +25,5 @@ export const IDLE_FARM_RANDOM_EVENTS_COMMAND: Record<
   packing: 'Pack',
   energy: 'OHMMM',
   lucky: 'Join',
-  taxCollector: 'Sue'
+  taxcollector: 'Sue'
 } as const;

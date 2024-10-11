@@ -61,11 +61,11 @@ export default <SlashCommand>{
       .addStringOption((option) =>
         option
           .setName(
-            IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector
+            IDLE_FARM_RANDOM_EVENTS_NAME.taxcollector
               .replaceAll(' ', '-')
               .toLowerCase()
           )
-          .setDescription(IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector)
+          .setDescription(IDLE_FARM_RANDOM_EVENTS_NAME.taxcollector)
       ),
   permissions: [PermissionsBitField.Flags.ManageGuild],
   execute: async (client, interaction) => {
@@ -81,8 +81,8 @@ export default <SlashCommand>{
     const lucky = interaction.options.getString(
       IDLE_FARM_RANDOM_EVENTS_NAME.lucky.replaceAll(' ', '-').toLowerCase()
     );
-    const taxCollector = interaction.options.getString(
-      IDLE_FARM_RANDOM_EVENTS_NAME.taxCollector.replaceAll(' ', '-').toLowerCase()
+    const taxcollector = interaction.options.getString(
+      IDLE_FARM_RANDOM_EVENTS_NAME.taxcollector.replaceAll(' ', '-').toLowerCase()
     );
 
     const serverAccount = await serverService.updateRandomEvents({
@@ -92,7 +92,7 @@ export default <SlashCommand>{
         energy: energy ? (energy === 'clear' ? null : energy) : undefined,
         lucky: lucky ? (lucky === 'clear' ? null : lucky) : undefined,
         packing: packing ? (packing === 'clear' ? null : packing) : undefined,
-        taxCollector: taxCollector ? (taxCollector === 'clear' ? null : taxCollector) : undefined
+        taxcollector: taxcollector ? (taxcollector === 'clear' ? null : taxcollector) : undefined
       }
     });
     if (!serverAccount) return null;

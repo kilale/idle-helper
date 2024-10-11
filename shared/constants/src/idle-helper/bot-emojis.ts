@@ -86,7 +86,7 @@ const ITEMS = {
   radiationEmitter: '<:radiationemitter:1291139182311379107>',
 
   soda: '<:soda:1291139183586578543>',
-  solarpanel: '<:solarpanel:1291139185067036776>',
+  solarPanel: '<:solarpanel:1291139185067036776>',
   clock: '<:clock:1191407592312946708>',
   flashlight: '<:flashlight:1191407601762713662>',
   dudirusirtEntity: '<:dudirusirtentity:1291139174598054019>',
@@ -196,7 +196,7 @@ const ITEMS = {
   rareDice: '<:raredice:1153219153595994184>',
   epicDice: '<:epicdice:1153219160650821712>',
   mythicDice: '<:mythicdice:1153219157198897222>',
-  legendarycDice: '<:legendarydice:1250918647623450668>',
+  legendaryDice: '<:legendarydice:1250918647623450668>',
   uselessLootbox: '<:uselesslootbox:1153219266095632424>',
   commonLootbox: '<:commonlootbox:1153220944551227483>',
   uncommonLootbox: '<:uncommonlootbox:1153220935575412776>',
@@ -252,9 +252,10 @@ const ITEMS = {
   speedGloves: '<:speedgloves:1249837427623727165>',
   heartShapedKey: '<:heartshapedkey:1205995106482520074>',
   goldenEgg: '<:goldenegg:688232494968995874>',
-  anniversarylootbox: '<:anniversarylootbox:686759018655776776>',
+  anniversaryLootbox: '<:anniversarylootbox:686759018655776776>',
   lootSphere: '<:lootsphere:1249745316937203824>',
-  candyApple: '<:candyapple:1161831027812085862>'
+  candyApple: '<:candyapple:1161831027812085862>',
+  energyTank: '<energytank:1249837417536426105>'
 
 } as const;
 
@@ -448,7 +449,7 @@ export const BOT_EMOJI = {
     radiactory: ITEMS.radiationEmitter,
     clockAssembly: ITEMS.clock,
     flashlightAssembly: ITEMS.flashlight,
-    solarPanelFactory: ITEMS.solarpanel,
+    solarPanelAssembly: ITEMS.solarPanel,
     sodaBusiness: ITEMS.soda,
     scytheSpawner: ITEMS.rareScythe,
 
