@@ -205,6 +205,9 @@ const ITEMS = {
   mythicLootbox: '<:MYTHIClootbox:1153219269807583302>',
   legendaryLootbox: '<:LEGENDARYlootbox:1250911787449323590>',
   megaBoost: '<:megaboost:1199883108183441408>',
+  taxCollectorBag:'<:taxcollectorbag:1291962794828238849>',
+  taxCollectorLootbox:'<:taxcollectorlootbox:1291965572778688573>',
+
 
   uselessScythe: '<:uselessscythe:1209232427353112608>',
   scythe: '<:scythe:1161140802773340160>',
@@ -448,7 +451,7 @@ export const BOT_EMOJI = {
     solarPanelFactory: ITEMS.solarpanel,
     sodaBusiness: ITEMS.soda,
     scytheSpawner: ITEMS.rareScythe,
-    
+
     dudirusirtGigafactory: ITEMS.dudirusirtEntity,
     microwaveAssembly: ITEMS.microwave,
 
