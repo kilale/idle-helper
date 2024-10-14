@@ -13,5 +13,5 @@ export const calculatePackingProfits = ({
   itemPrice,
   taxValue
 }: ICalculatePackingProfits) => {
-  return ((boxPrice * multiplier * taxValue) - itemPrice) * 100;
+  return (boxPrice * multiplier * taxValue) - (itemPrice * 100);
 };
