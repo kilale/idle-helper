@@ -11,6 +11,18 @@ export const _invite = async (): Promise<EmbedBuilder> => {
 
   embed.addFields(
     {
+      name: '** **',
+      value: 'Cult Helper is __invite only__ bot, if you want to get access:\n\n- join the support server\n- contribute to the project',
+      inline: false
+    },
+    {
+      name: '** **',
+      value: `** **\n**Join the Cult Helper support server:**\n**[Support Server](${SUPPORT_SERVER_INVITE_LINK})**`,
+      inline: false
+    }
+  );
+ /*  embed.addFields(
+    {
       name: 'Cult Helper is __invite only__ bot, if you want to get access:',
       value: '-join the support server\n- contribute to the project'
     },
@@ -18,7 +30,7 @@ export const _invite = async (): Promise<EmbedBuilder> => {
       name: 'Join the Cult Helper support server',
       value: `**[Support Server](${SUPPORT_SERVER_INVITE_LINK})**`
     }
-  );
+  ); */
 
   return embed;
 };
