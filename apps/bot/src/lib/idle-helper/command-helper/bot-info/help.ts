@@ -110,12 +110,12 @@ export const generateEmbedHome = ({groups, client}: IGenerateEmbed) => {
 
 export const generateButtons = () => {
   return new ActionRowBuilder<ButtonBuilder>()
-    .addComponents(
-      new ButtonBuilder()
-        .setStyle(ButtonStyle.Link)
-        .setLabel('Invite')
-        .setURL(BOT_INVITE_LINK)
-    )
+    //.addComponents(
+    //  new ButtonBuilder()
+    //    .setStyle(ButtonStyle.Link)
+    //    .setLabel('Invite')
+    //    .setURL(BOT_INVITE_LINK)
+    //)
     .addComponents(
       new ButtonBuilder()
         .setStyle(ButtonStyle.Link)
