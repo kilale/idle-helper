@@ -287,15 +287,15 @@ export const BOT_EMOJI = {
   utils: {
     onGrey: '<:ongrey:1295465768065957948>',
     offGrey: '<:offgrey:1295465754875007029>',
-    sub: '<:sub:1108797568013578280>',
+    sub: '<:sub:1295496169824190515>',
     off: '<:off:1295465781789855886>',
     on: '<:on:1295465738815017001>',
     ready: '<:on:1295465738815017001>',
     notReady: ':watch:',
     heart: ':heart:',
     taco: ':taco:',
-    noEntry: ':no_entry_sign:',
-    backspace: '<:backspace:1165345176378687580>'
+    noEntry: '<:no_entry:1295496513652392017>',
+    backspace: ':arrow_backward:'
   },
   worker: {
     wise: '<:wiseworker:1294808626057318420>',
