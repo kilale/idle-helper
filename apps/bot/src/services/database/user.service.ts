@@ -88,7 +88,8 @@ const claimFarm = async ({userId}: IClaimFarm): Promise<IUser | null> => {
       $set: {
         'farms.lastClaimedAt': new Date(),
         'farms.itemsUsed.timeCompressor': 0,
-        'farms.itemsUsed.timeSpeeder': 0
+        'farms.itemsUsed.timeSpeeder': 0,
+        'farms.itemsUsed.timeDilator': 0
       }
     },
     {
