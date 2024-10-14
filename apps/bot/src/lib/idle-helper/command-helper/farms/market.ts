@@ -85,7 +85,7 @@ const getEmbed = (marketItems: TMarketItems, type: EmbedType) => {
 
   if(type === 'rate') {
     const sorted = typedObjectEntries(marketItems)
-      .filter(([key]) => !(key in IDLE_FARM_ITEMS_BOX) && !(key in IDLE_FARM_ITEMS_CONTAINER)&& !(key in IDLE_FARM_ITEMS_SHIP)&& !(key in IDLE_FARM_ITEMS_SPACESHIP))
+      .filter(([key]) => !(key in IDLE_FARM_ITEMS_BOX) && !(key in IDLE_FARM_ITEMS_CONTAINER) && !(key in IDLE_FARM_ITEMS_SHIP) && !(key in IDLE_FARM_ITEMS_SPACESHIP))
       .sort(([, a], [, b]) => b.rate - a.rate);
     const value: string[] = [];
     sorted.forEach(([key, item], index, array) => {
