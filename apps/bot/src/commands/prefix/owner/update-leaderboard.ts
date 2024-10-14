@@ -4,7 +4,7 @@ import {djsMessageHelper} from '../../../lib/discordjs/message';
 
 export default <PrefixCommand>{
   name: 'updateLeaderboard',
-  commands: ['update top'],
+  commands: ['update top', 'ut'],
   type: PREFIX_COMMAND_TYPE.dev,
   preCheck: {},
   execute: async (client, message) => {

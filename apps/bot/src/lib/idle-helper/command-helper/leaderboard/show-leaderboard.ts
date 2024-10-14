@@ -93,6 +93,26 @@ const SELECTOR_LABEL = {
   [IDLE_FARM_WORKER_TYPE.guru]: {
     emoji: BOT_EMOJI.worker.guru,
     label: 'GURU'
+  },
+  [IDLE_FARM_WORKER_TYPE.spooky]: {
+    emoji: BOT_EMOJI.worker.spooky,
+    label: 'Spooky'
+  },
+  [IDLE_FARM_WORKER_TYPE.snowy]: {
+    emoji: BOT_EMOJI.worker.snowy,
+    label: 'Snowy'
+  },
+  [IDLE_FARM_WORKER_TYPE.lovely]: {
+    emoji: BOT_EMOJI.worker.lovely,
+    label: 'Lovely'
+  },
+  [IDLE_FARM_WORKER_TYPE.jumpy]: {
+    emoji: BOT_EMOJI.worker.jumpy,
+    label: 'Jumpy'
+  },
+  [IDLE_FARM_WORKER_TYPE.festive]: {
+    emoji: BOT_EMOJI.worker.festive,
+    label: 'Festive'
   }
 };
 
@@ -104,7 +124,12 @@ const PAGES_TITLE = {
   [IDLE_FARM_WORKER_TYPE.expert]: `${BOT_EMOJI.animatedWorker.expert} ${BOT_EMOJI.workerText.expert1}${BOT_EMOJI.workerText.expert2}${BOT_EMOJI.workerText.expert3}${BOT_EMOJI.workerText.expert4}${BOT_EMOJI.workerText.expert5}`,
   [IDLE_FARM_WORKER_TYPE.wise]: `${BOT_EMOJI.animatedWorker.wise} ${BOT_EMOJI.workerText.wise1}${BOT_EMOJI.workerText.wise2}${BOT_EMOJI.workerText.wise3}${BOT_EMOJI.workerText.wise4}`,
   [IDLE_FARM_WORKER_TYPE.masterful]: `${BOT_EMOJI.animatedWorker.masterful} ${BOT_EMOJI.workerText.masterful1}${BOT_EMOJI.workerText.masterful2}${BOT_EMOJI.workerText.masterful3}${BOT_EMOJI.workerText.masterful4}${BOT_EMOJI.workerText.masterful5}${BOT_EMOJI.workerText.masterful6}${BOT_EMOJI.workerText.masterful7}`,
-  [IDLE_FARM_WORKER_TYPE.guru]: `${BOT_EMOJI.animatedWorker.guru} ${BOT_EMOJI.workerText.guru1}${BOT_EMOJI.workerText.guru2}${BOT_EMOJI.workerText.guru3}${BOT_EMOJI.workerText.guru4}`
+  [IDLE_FARM_WORKER_TYPE.guru]: `${BOT_EMOJI.animatedWorker.guru} ${BOT_EMOJI.workerText.guru1}${BOT_EMOJI.workerText.guru2}${BOT_EMOJI.workerText.guru3}${BOT_EMOJI.workerText.guru4}`,
+  [IDLE_FARM_WORKER_TYPE.spooky]: `${BOT_EMOJI.animatedWorker.spooky} ${BOT_EMOJI.workerText.spooky1}${BOT_EMOJI.workerText.spooky2}${BOT_EMOJI.workerText.spooky3}${BOT_EMOJI.workerText.spooky4}${BOT_EMOJI.workerText.spooky5}`,
+  [IDLE_FARM_WORKER_TYPE.snowy]: `${BOT_EMOJI.animatedWorker.snowy} ${BOT_EMOJI.workerText.snowy1}${BOT_EMOJI.workerText.snowy2}${BOT_EMOJI.workerText.snowy3}${BOT_EMOJI.workerText.snowy4}`,
+  [IDLE_FARM_WORKER_TYPE.lovely]: `${BOT_EMOJI.animatedWorker.lovely} ${BOT_EMOJI.workerText.lovely1}${BOT_EMOJI.workerText.lovely2}${BOT_EMOJI.workerText.lovely3}${BOT_EMOJI.workerText.lovely4}${BOT_EMOJI.workerText.lovely5}`,
+  [IDLE_FARM_WORKER_TYPE.jumpy]: `${BOT_EMOJI.animatedWorker.jumpy} ${BOT_EMOJI.workerText.jumpy1}${BOT_EMOJI.workerText.jumpy2}${BOT_EMOJI.workerText.jumpy3}${BOT_EMOJI.workerText.jumpy4}`,
+  [IDLE_FARM_WORKER_TYPE.festive]: `${BOT_EMOJI.animatedWorker.festive} ${BOT_EMOJI.workerText.festive1}${BOT_EMOJI.workerText.festive2}${BOT_EMOJI.workerText.festive3}${BOT_EMOJI.workerText.festive4}${BOT_EMOJI.workerText.festive5}${BOT_EMOJI.workerText.festive6}`
 };
 
 interface IGenerateEmbed {
