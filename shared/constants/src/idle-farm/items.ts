@@ -81,7 +81,7 @@ export const IDLE_FARM_ITEMS_PRODUCT = {
   battery: 'battery',
   biofuel: 'biofuel',
   idlisticFlavor: 'idlistic flavor',
-  radiationEmitter: 'radiation remitter'
+  radiationEmitter: 'radiation emitter'
 } as const;
 
 export const IDLE_FARM_ITEMS_ASSEMBLY = {
