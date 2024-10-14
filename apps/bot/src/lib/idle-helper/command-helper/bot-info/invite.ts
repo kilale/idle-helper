@@ -10,7 +10,7 @@ export const _invite = async (): Promise<EmbedBuilder> => {
   embed.setTitle('Cult Helper Invite');
   embed.addFields(
     {
-      name: '',
+      name: ' ',
       value: 'Cult Helper is __invite only__ bot, if you want to get access:\n- join the support server\n- contribute to the project'
     },
     {
