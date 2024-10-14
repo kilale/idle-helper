@@ -124,7 +124,6 @@ export const IDLE_FARM_ITEMS_CONSUMABLE = {
   legendaryDice: 'legendary dice',
   uselessLootbox: 'useless lootbox',
   commonLootbox: 'common lootbox',
-  uncommonLootbox: 'uncommon lootbox',
   rareLootbox: 'rare lootbox',
   epicLootbox: 'epic lootbox',
   mythicLootbox: 'mythic lootbox',
