@@ -366,7 +366,7 @@ export const BOT_EMOJI = {
     wise3: '<:wise3:1295322873258311753>',
     wise4: '<:wise4:1295322856040693770>',
     expert1: '<a:expert1:1295323628761645058>',
-    expert2: '<a:expert2:1295382783186829463>',
+    expert2: '<a:expert2:1295383364261511179>',
     expert3: '<:expert3:1295323610365300747>',
     expert4: '<a:expert4:1295323607404380200>',
     expert5: '<:expert5:1295323591927136297>',
