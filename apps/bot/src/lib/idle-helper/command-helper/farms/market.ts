@@ -2,7 +2,7 @@ import {infoService} from '../../../../services/database/info.service';
 import type {TMarketItems} from '@idle-helper/models/dist/info/info.type';
 import type {BaseInteraction} from 'discord.js';
 import {ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder} from 'discord.js';
-import {IDLE_FARM_ITEMS, IDLE_FARM_ITEMS_BOX, IDLE_FARM_ITEMS_CONTAINER} from '@idle-helper/constants';
+import {IDLE_FARM_ITEMS, IDLE_FARM_ITEMS_BOX, IDLE_FARM_ITEMS_CONTAINER, IDLE_FARM_ITEMS_SHIP, IDLE_FARM_ITEMS_SPACESHIP} from '@idle-helper/constants';
 import {
   BOT_COLOR,
   BOT_EMOJI,
@@ -85,7 +85,7 @@ const getEmbed = (marketItems: TMarketItems, type: EmbedType) => {
 
   if(type === 'rate') {
     const sorted = typedObjectEntries(marketItems)
-      .filter(([key]) => !(key in IDLE_FARM_ITEMS_BOX) && !(key in IDLE_FARM_ITEMS_CONTAINER))
+      .filter(([key]) => !(key in IDLE_FARM_ITEMS_BOX) && !(key in IDLE_FARM_ITEMS_CONTAINER)&& !(key in IDLE_FARM_ITEMS_SHIP)&& !(key in IDLE_FARM_ITEMS_SPACESHIP))
       .sort(([, a], [, b]) => b.rate - a.rate);
     const value: string[] = [];
     sorted.forEach(([key, item], index, array) => {
