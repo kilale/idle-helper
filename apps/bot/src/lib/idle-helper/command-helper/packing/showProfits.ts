@@ -87,7 +87,7 @@ export const _showPackingProfits = async ({author, multiplier, taxValue}: IShowP
 };
 
 interface IGenerateProfits {
-  items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED>;
+  items: Partial<typeof IDLE_FARM_ITEMS_MATERIAL & typeof IDLE_FARM_ITEMS_REFINED & typeof IDLE_FARM_ITEMS_PRODUCT & typeof IDLE_FARM_ITEMS_ASSEMBLY>;
   taxValue: ValuesOf<typeof TAX_RATE_BOX>;
   marketItems: Awaited<ReturnType<typeof infoService.getMarketItems>>;
   multiplier: number;

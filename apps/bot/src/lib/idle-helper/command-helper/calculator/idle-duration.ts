@@ -1,5 +1,5 @@
-import type {IUser} from '@idle-helper/models';
-import {IDLE_FARM_TIME_BOOSTER_DURATION} from '@idle-helper/constants';
+import type { IUser } from '@idle-helper/models';
+import { IDLE_FARM_TIME_BOOSTER_DURATION } from '@idle-helper/constants';
 
 export const _idleDurationCalculator = (userAccount: IUser) => {
   const timeSpeederUsed = userAccount.farms.itemsUsed.timeSpeeder ?? 0;
@@ -8,8 +8,8 @@ export const _idleDurationCalculator = (userAccount: IUser) => {
 
   const extraTime =
     IDLE_FARM_TIME_BOOSTER_DURATION.timeSpeeder * timeSpeederUsed +
-    IDLE_FARM_TIME_BOOSTER_DURATION.timeCompressor * timeCompressorUsed;
-    IDLE_FARM_TIME_BOOSTER_DURATION.timeDilator* timeDilatorUsed;
+    IDLE_FARM_TIME_BOOSTER_DURATION.timeCompressor * timeCompressorUsed +
+    IDLE_FARM_TIME_BOOSTER_DURATION.timeDilator * timeDilatorUsed;
 
   return Date.now() - userAccount.farms.lastClaimedAt.getTime() + extraTime;
 };

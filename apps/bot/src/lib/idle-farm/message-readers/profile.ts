@@ -68,5 +68,5 @@ const LEAGUE_LABEL = {
   [IDLE_FARM_LEAGUE.flashlight2]: 'Flashlight league II',
   [IDLE_FARM_LEAGUE.flashlight3]: 'Flashlight league III',
   [IDLE_FARM_LEAGUE.flashlight4]: 'Flashlight league IV',
-  [IDLE_FARM_LEAGUE.flashlight5]: 'Flashlight league V',
+  [IDLE_FARM_LEAGUE.flashlight5]: 'Flashlight league V'
 } as Record<keyof typeof IDLE_FARM_LEAGUE, string>;
