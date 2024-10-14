@@ -75,7 +75,7 @@ const ITEMS = {
 
   idlisticFlavor: '<:idlisticflavor:1294815468116381777>',
   dirustMix: '<:dusirtMix:1295312875891589130>',
-  chair: '<:chair:>1294815372398039153',
+  chair: '<:chair:1294815372398039153>',
   fabric: '<:fabric:1295312962172489801>',
   gear: '<:gear:1295320366209695744>',
   lasagna: '<:lasagna:1294815450340786247>',
