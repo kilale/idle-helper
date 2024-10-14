@@ -7,12 +7,12 @@ import {
 
 export const _invite = async (): Promise<EmbedBuilder> => {
   const embed = new EmbedBuilder().setColor(BOT_COLOR.embed);
+  embed.setTitle('Cult Helper Invite');
 
   embed.addFields(
     {
-      name: 'Invite Cult Helper to your server',
-      value: `__There is **no** invite link. Ask for access.__\n
-      >>> Join the support server, contribute to the community and get your server whitelisted.`
+      name: 'Cult Helper is __invite only__ bot, if you want to get access:',
+      value: '-join the support server\n- contribute to the project'
     },
     {
       name: 'Join the Cult Helper support server',

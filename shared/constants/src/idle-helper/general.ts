@@ -16,5 +16,4 @@ export const USER_ACC_OFF_ACTIONS = {
 } as const;
 
 export const SUPPORT_SERVER_INVITE_LINK = 'https://discord.gg/GYcFwdhMgd';
-export const BOT_INVITE_LINK =
-  '';
+export const BOT_INVITE_LINK = '';

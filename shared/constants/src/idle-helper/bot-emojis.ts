@@ -285,12 +285,12 @@ const ITEMS = {
 
 export const BOT_EMOJI = {
   utils: {
-    onGrey: '<:ongrey:1136290739496685681>',
-    offGrey: '<:offgrey:1136290741639979170>',
+    onGrey: '<:ongrey:1295465768065957948>',
+    offGrey: '<:offgrey:1295465754875007029>',
     sub: '<:sub:1108797568013578280>',
-    off: '<:off:1136290745096077442>',
-    on: ':white_check_mark:',
-    ready: ':white_check_mark:',
+    off: '<:off:1295465781789855886>',
+    on: '<:on:1295465738815017001>',
+    ready: '<:on:1295465738815017001>',
     notReady: ':watch:',
     heart: ':heart:',
     taco: ':taco:',
