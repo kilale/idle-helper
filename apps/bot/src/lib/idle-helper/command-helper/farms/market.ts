@@ -50,6 +50,7 @@ type TCategory = {
 }
 
 const categories: TCategory[] = [
+
   {
     items: IDLE_FARM_ITEMS_MATERIAL,
     label: 'Materials'
@@ -59,24 +60,21 @@ const categories: TCategory[] = [
     items: IDLE_FARM_ITEMS_REFINED,
     label: 'Refined'
   },
-
   {
     items: IDLE_FARM_ITEMS_PRODUCT,
     label: 'Products'
   },
-
   {
     items: IDLE_FARM_ITEMS_ASSEMBLY,
     label: 'Assemblies'
   },
-  
   {
     items: IDLE_FARM_ITEMS_TOOLS,
     label: 'Tools'
   }
 ];
 
-const ITEMS_PER_FIELD = 20;
+const ITEMS_PER_FIELD = 15;
 
 const getEmbed = (marketItems: TMarketItems, type: EmbedType) => {
   const embed = new EmbedBuilder()
