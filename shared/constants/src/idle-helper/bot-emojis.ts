@@ -316,7 +316,7 @@ export const BOT_EMOJI = {
     wise: '<a:wiseworker:1294808626057318420>',
     useless: '<a:uselessworker:1294761865381019749>',
     talented: '<a:talentedworker:1294808278508900352>',
-    masterful: '<a:masterfulworker1294808596441337982>',
+    masterful: '<a:masterfulworker:1294808596441337982>',
     expert: '<a:expertworker:1294808612673159290>',
     deficient: '<a:deficientworker:1294761673340747778>',
     common: '<a:commonworker:1294808223056134144>',
