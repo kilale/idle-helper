@@ -54,18 +54,22 @@ const categories: TCategory[] = [
     items: IDLE_FARM_ITEMS_MATERIAL,
     label: 'Materials'
   },
+
   {
     items: IDLE_FARM_ITEMS_REFINED,
     label: 'Refined'
   },
+
   {
     items: IDLE_FARM_ITEMS_PRODUCT,
     label: 'Products'
   },
+
   {
     items: IDLE_FARM_ITEMS_ASSEMBLY,
     label: 'Assemblies'
   },
+  
   {
     items: IDLE_FARM_ITEMS_TOOLS,
     label: 'Tools'
