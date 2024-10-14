@@ -10,12 +10,12 @@ export const _invite = async (): Promise<EmbedBuilder> => {
 
   embed.addFields(
     {
-      name: 'Invite Cult Helper to your server',
+      name: '## Invite Cult Helper to your server',
       value: `__There is **no** invite link. Ask for access.__\n
       >>> Join the support server, contribute to the community and get your server whitelisted.`
     },
     {
-      name: 'Join the Cult Helper support server',
+      name: '## Join the Cult Helper support server',
       value: `**[Support Server](${SUPPORT_SERVER_INVITE_LINK})**`
     }
   );
