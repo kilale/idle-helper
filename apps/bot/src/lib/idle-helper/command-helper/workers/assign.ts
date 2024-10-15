@@ -264,7 +264,7 @@ const generateSetComponents = ({preferenceFarms, workers, ended = false}: IGener
     const isWorkerAssign = preferenceFarms.some(farm => farm.targetWorker === workerType);
     const button = new ButtonBuilder()
       .setCustomId(`set:${workerType}`)
-      .setEmoji(BOT_EMOJI.worker[workerType])
+      .setEmoji(BOT_EMOJI.animatedWorker[workerType])
       .setLabel('\u200b')
       .setDisabled(isWorkerAssign || isAllAssigned || ended)
       .setStyle(ButtonStyle.Secondary);
