@@ -20,7 +20,7 @@ export const IDLE_FARM_FARM_TYPE = {
   lithiumExtractor: 'lithium extractor',
   petroleumExtractor: 'petroleum extractor',
   uraniumCave:'uranium cave',
-  sawMill: 'sawmill',
+  sawmill: 'sawmill',
 
   textileMill: 'textile mill',
   bakery: 'bakery',
