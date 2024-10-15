@@ -7,7 +7,6 @@ interface IWorkerAssignReader {
 
 export const _workerAssignReader = ({content}: IWorkerAssignReader) => {
   const farmId = content.match(/farm `([a-zA-Z0-9]+)`/)?.[1] ?? '0';
-  console.log('Recognized farmId: ' + farmId);
   const workerType = content.match(/`(.*) worker` successfully/)?.[1];
   const replacedWorker = content.match(/replaced <.+> `(.*) worker`/)?.[1];
 
