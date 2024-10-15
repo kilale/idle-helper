@@ -238,8 +238,8 @@ const generateSetEmbed = ({preferenceFarms, author}: IGenerateSetEmbed) => {
     const farmName = farmType ? IDLE_FARM_FARM_TYPE[farmType] : 'unknown';
     const farmLevel = preferenceFarm.level;
     const assignWorker = preferenceFarm.targetWorker;
-    const assignWorkerEmoji = assignWorker ? BOT_EMOJI.worker[assignWorker] : ':no_entry_sign:';
-    const divider = currentFarm?.id === preferenceFarm.id ? ':point_right:' : '~-~';
+    const assignWorkerEmoji = assignWorker ? BOT_EMOJI.animatedWorker[assignWorker] : BOT_EMOJI.utils.noEntry;
+    const divider = currentFarm?.id === preferenceFarm.id ? BOT_EMOJI.utils.sub : '~-~';
     row.push(`${farmEmoji} **${farmName} Lv${farmLevel}** ${divider} ${assignWorkerEmoji}`);
   }
   embed.setDescription(row.join('\n'));
@@ -290,7 +290,7 @@ const generateSetComponents = ({preferenceFarms, workers, ended = false}: IGener
     .addComponents(
       new ButtonBuilder()
         .setCustomId('delete')
-        //.setEmoji(BOT_EMOJI.utils.backspace)
+        .setEmoji(BOT_EMOJI.utils.backspace)
         //.setLabel('\u200b')
         .setLabel('Remove assignment')
         .setStyle(ButtonStyle.Secondary)

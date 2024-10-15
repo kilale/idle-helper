@@ -295,7 +295,7 @@ export const BOT_EMOJI = {
     heart: ':heart:',
     taco: ':taco:',
     noEntry: '<:no_entry:1295496513652392017>',
-    backspace: ':arrow_backward:'
+    backspace: '<:backspace:1295760688563879958>'
   },
   worker: {
     wise: '<:wiseworker:1294808626057318420>',
