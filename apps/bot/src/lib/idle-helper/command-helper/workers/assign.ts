@@ -283,7 +283,7 @@ const generateSetComponents = ({preferenceFarms, workers, ended = false}: IGener
         .setCustomId('skip')
         //.setLabel('\u200b')
         .setLabel('Skip farm')
-        //.setEmoji(BOT_EMOJI.utils.noEntry)
+        .setEmoji(BOT_EMOJI.utils.noEntry)
         .setStyle(ButtonStyle.Secondary)
         .setDisabled(isAllAssigned || ended)
     )
