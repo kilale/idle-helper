@@ -426,7 +426,7 @@ export const BOT_EMOJI = {
     lithiumExtractor: ITEMS.lithium,
     petroleumExtractor: ITEMS.petroleum,
     uraniumCave: ITEMS.uranium,
-    sawMill: ITEMS.plank,
+    sawmill: ITEMS.plank,
 
     textileMill: ITEMS.thread,
     bakery: ITEMS.bread,
