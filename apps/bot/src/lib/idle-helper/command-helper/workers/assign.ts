@@ -169,6 +169,9 @@ const collectPreferenceFarms = async ({
   if (!event) return;
   event.every(async (interaction, customId) => {
     const type = customId.split(':')[0];
+
+    if(interaction.user.id !== author.id) return null;
+    
     if (type === 'set') {
       const workerType = customId.split(':')[1] as ValuesOf<typeof IDLE_FARM_WORKER_TYPE>;
       const nextFarm = preferenceFarms.find(farm => !farm.assigned);

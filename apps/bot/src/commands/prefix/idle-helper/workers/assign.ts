@@ -3,7 +3,7 @@ import commandHelper from '../../../../lib/idle-helper/command-helper';
 
 export default <PrefixCommand>{
   name: 'workersAssign',
-  commands: ['workers assign', 'worker assign', 'wo assign'],
+  commands: ['workers assign', 'worker assign', 'wo assign', 'woa'],
   preCheck: {
     userAccOff: USER_ACC_OFF_ACTIONS.askToTurnOn,
     userNotRegistered: USER_NOT_REGISTERED_ACTIONS.askToRegister
