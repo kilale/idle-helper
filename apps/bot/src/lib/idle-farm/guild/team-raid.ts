@@ -164,7 +164,7 @@ export const generateConfirmationEmbed = ({
         value: top3Workers
           .map(
             (worker) =>
-              `${BOT_EMOJI.worker[worker.type]} Lv ${worker.level} | AT: ${
+              `${BOT_EMOJI.animatedWorker[worker.type]} Lv ${worker.level} | AT: ${
                 worker.power
               }`
           )

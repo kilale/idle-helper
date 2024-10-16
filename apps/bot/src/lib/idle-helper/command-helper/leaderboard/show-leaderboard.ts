@@ -63,55 +63,55 @@ export const _showLeaderboard = async () => {
 
 const SELECTOR_LABEL = {
   [IDLE_FARM_WORKER_TYPE.useless]: {
-    emoji: BOT_EMOJI.worker.useless,
+    emoji: BOT_EMOJI.animatedWorker.useless,
     label: 'Useless'
   },
   [IDLE_FARM_WORKER_TYPE.deficient]: {
-    emoji: BOT_EMOJI.worker.deficient,
+    emoji: BOT_EMOJI.animatedWorker.deficient,
     label: 'Deficient'
   },
   [IDLE_FARM_WORKER_TYPE.common]: {
-    emoji: BOT_EMOJI.worker.common,
+    emoji: BOT_EMOJI.animatedWorker.common,
     label: 'Common'
   },
   [IDLE_FARM_WORKER_TYPE.talented]: {
-    emoji: BOT_EMOJI.worker.talented,
+    emoji: BOT_EMOJI.animatedWorker.talented,
     label: 'Talented'
   },
   [IDLE_FARM_WORKER_TYPE.wise]: {
-    emoji: BOT_EMOJI.worker.wise,
+    emoji: BOT_EMOJI.animatedWorker.wise,
     label: 'Wise'
   },
   [IDLE_FARM_WORKER_TYPE.expert]: {
-    emoji: BOT_EMOJI.worker.expert,
+    emoji: BOT_EMOJI.animatedWorker.expert,
     label: 'Expert'
   },
   [IDLE_FARM_WORKER_TYPE.masterful]: {
-    emoji: BOT_EMOJI.worker.masterful,
+    emoji: BOT_EMOJI.animatedWorker.masterful,
     label: 'Masterful'
   },
   [IDLE_FARM_WORKER_TYPE.guru]: {
-    emoji: BOT_EMOJI.worker.guru,
+    emoji: BOT_EMOJI.animatedWorker.guru,
     label: 'GURU'
   },
   [IDLE_FARM_WORKER_TYPE.spooky]: {
-    emoji: BOT_EMOJI.worker.spooky,
+    emoji: BOT_EMOJI.animatedWorker.spooky,
     label: 'Spooky'
   },
   [IDLE_FARM_WORKER_TYPE.snowy]: {
-    emoji: BOT_EMOJI.worker.snowy,
+    emoji: BOT_EMOJI.animatedWorker.snowy,
     label: 'Snowy'
   },
   [IDLE_FARM_WORKER_TYPE.lovely]: {
-    emoji: BOT_EMOJI.worker.lovely,
+    emoji: BOT_EMOJI.animatedWorker.lovely,
     label: 'Lovely'
   },
   [IDLE_FARM_WORKER_TYPE.jumpy]: {
-    emoji: BOT_EMOJI.worker.jumpy,
+    emoji: BOT_EMOJI.animatedWorker.jumpy,
     label: 'Jumpy'
   },
   [IDLE_FARM_WORKER_TYPE.festive]: {
-    emoji: BOT_EMOJI.worker.festive,
+    emoji: BOT_EMOJI.animatedWorker.festive,
     label: 'Festive'
   }
 };

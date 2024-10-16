@@ -384,14 +384,14 @@ function startRaid({workers, enemies}: IStartRaid) {
     _enemies[0].hp -= damage;
     if (_enemies[0].hp <= 0) {
       log.push(
-        `${BOT_EMOJI.worker[worker.type]} ⚔️ ${
+        `${BOT_EMOJI.animatedWorker[worker.type]} ⚔️ ${
           enemy.type ? BOT_EMOJI.animatedWorker[enemy.type] : '??'
         } | 💀`
       );
       _enemies.shift();
     } else {
       log.push(
-        `${BOT_EMOJI.worker[worker.type]} ⚔️ ${
+        `${BOT_EMOJI.animatedWorker[worker.type]} ⚔️ ${
           enemy.type ? BOT_EMOJI.animatedWorker[enemy.type] : '??'
         } | ${_enemies[0].hp} / ${enemy.hp} ❤️`
       );
