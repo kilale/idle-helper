@@ -94,7 +94,7 @@ const generateMessageOptions = ({
         type: worker.type,
         level: worker.level
       });
-      const stats = `${BOT_EMOJI.worker[worker.type]} | DEF: ${calcOneShotPower(
+      const stats = `${BOT_EMOJI.animatedWorker[worker.type]} | DEF: ${calcOneShotPower(
         {
           enemyPower,
           enemyHp: worker.maxHp,
@@ -139,10 +139,10 @@ const generateMessageOptions = ({
             })
             : 0;
           stats = `${
-            BOT_EMOJI.worker[workerInfo.type]
+            BOT_EMOJI.animatedWorker[workerInfo.type]
           } AT: ${workerPower} | DMG: ${damage}`;
         } else {
-          stats = `${BOT_EMOJI.worker[workerInfo.type]} ??`;
+          stats = `${BOT_EMOJI.animatedWorker[workerInfo.type]} ??`;
         }
         workersInfo.push(workerInfo.used ? `~~${stats}~~` : stats);
       }

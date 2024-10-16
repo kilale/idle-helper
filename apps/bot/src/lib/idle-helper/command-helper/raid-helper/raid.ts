@@ -191,7 +191,7 @@ export const generateEmbed = ({
       embed.setDescription(
         [
           '**Current Enemy**',
-          `${BOT_EMOJI.worker[currentEnemy.worker]}`,
+          `${BOT_EMOJI.animatedWorker[currentEnemy.worker]}`,
           `${BOT_EMOJI.other.level} ${currentEnemy.level}`,
           `❤️ ${currentEnemy.health} / ${currentEnemy.maxHealth}`
         ].join('\n')
@@ -223,7 +223,7 @@ export const generateEmbed = ({
         })
         : '∞';
       const isWorkerUsed = !!workers.find((w) => w.type === type)?.used;
-      let text = `${BOT_EMOJI.worker[type]} DMG: ${damage}`;
+      let text = `${BOT_EMOJI.animatedWorker[type]} DMG: ${damage}`;
       if (isWorkerUsed) text = `~~${text}~~`;
       workersInfo.push(text);
     }
@@ -279,7 +279,7 @@ export const generateComponents = ({
       const disabled = isUsed || !isNextMove;
       const button = new ButtonBuilder()
         .setCustomId(workerType)
-        .setEmoji(BOT_EMOJI.worker[workerType])
+        .setEmoji(BOT_EMOJI.animatedWorker[workerType])
         .setLabel(isSolution ? `${solutionIndex + 1}` : '\u200b')
         .setStyle(buttonStyle)
         .setDisabled(disabled);
@@ -385,14 +385,14 @@ function startRaid({workers, enemies}: IStartRaid) {
     if (_enemies[0].hp <= 0) {
       log.push(
         `${BOT_EMOJI.worker[worker.type]} ⚔️ ${
-          enemy.type ? BOT_EMOJI.worker[enemy.type] : '??'
+          enemy.type ? BOT_EMOJI.animatedWorker[enemy.type] : '??'
         } | 💀`
       );
       _enemies.shift();
     } else {
       log.push(
         `${BOT_EMOJI.worker[worker.type]} ⚔️ ${
-          enemy.type ? BOT_EMOJI.worker[enemy.type] : '??'
+          enemy.type ? BOT_EMOJI.animatedWorker[enemy.type] : '??'
         } | ${_enemies[0].hp} / ${enemy.hp} ❤️`
       );
     }

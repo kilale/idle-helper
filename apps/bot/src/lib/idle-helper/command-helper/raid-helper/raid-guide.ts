@@ -112,7 +112,7 @@ const generateEmbed = ({userWorkers, raidMessage}: IGenerateEmbed) => {
         def: enemyPower
       })
       : '-';
-    const value = `${BOT_EMOJI.worker[type]} Lv ${workerInfo.level} | AT: ${power} | DMG: ${damage}`;
+    const value = `${BOT_EMOJI.animatedWorker[type]} Lv ${workerInfo.level} | AT: ${power} | DMG: ${damage}`;
     const isWorkerUsed = workers.find((w) => w.type === type)?.used;
     workersInfo.push(isWorkerUsed ? `~~${value}~~` : value);
   }
@@ -134,7 +134,7 @@ const generateEmbed = ({userWorkers, raidMessage}: IGenerateEmbed) => {
       })
       : 0;
     const value = `${
-      worker ? BOT_EMOJI.worker[worker] : '??'
+      worker ? BOT_EMOJI.animatedWorker[worker] : '??'
     }Lv ${level} | AT: ${power}`;
     enemyFarmsInfo.push(
       health ? (isCurrentEnemy ? `**${value}**` : value) : `~~${value}~~`
