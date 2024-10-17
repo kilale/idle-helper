@@ -379,7 +379,7 @@ async function sendNextCommand({
 
   const embed = new EmbedBuilder().setColor(BOT_COLOR.embed);
 
-  embed.setTitle(title).setDescription(`\`${nextCommand}\``);
+  embed.setTitle(title).setDescription(`\`\`\`${nextCommand}\`\`\``);
 
   const isIdlonChanged = currentIdlons !== newIdlons;
   const isWorkerTokenChanged = currentWorkerTokens !== newWorkerTokens;
