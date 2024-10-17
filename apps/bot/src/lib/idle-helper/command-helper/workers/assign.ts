@@ -430,7 +430,7 @@ const generateAssignContent = ({preferenceFarms}: IGenerateAssignContent) => {
   if (!nextWorker) return '';
   const workerType = nextWorker.targetWorker;
   const farmId = nextWorker.id;
-  return `${PREFIX.idleFarm}wo assign ${workerType} ${farmId}`;
+  return `\`\`\`${PREFIX.idleFarm}wo assign ${workerType} ${farmId}\`\`\``;
 };
 
 interface IGeneratedAssignEmbed {
@@ -449,7 +449,7 @@ const generatedAssignEmbed = ({preferenceFarms, author}: IGeneratedAssignEmbed) 
     const workerType = farm.targetWorker;
     const farmId = farm.id;
     embed.addFields({
-      name: '\u200b',
+      name: ' ',
       value: `${PREFIX.idleFarm}wo assign ${workerType} ${farmId}`
     });
   }
