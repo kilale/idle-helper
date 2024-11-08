@@ -366,11 +366,11 @@ async function sendNextCommand({
       currentWorkerTokens
     );
 
-    const materialsToBuy = finalTokenToUse * 100;
+    const materialsToBuy = (finalTokenToUse * 100) - (materialAmount % 100);
 
     newIdlons -= materialsToBuy * materialPrice;
-    newMaterialAmount += materialsToBuy - (materialAmount % 100);
-
+    newMaterialAmount += materialsToBuy;
+  
     title = `Buy ${materialsToBuy.toLocaleString()} ${
       IDLE_FARM_ITEMS_PACKING_MATERIAL[materialName]
     }`;
