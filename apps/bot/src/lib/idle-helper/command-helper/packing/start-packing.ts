@@ -365,8 +365,8 @@ async function sendNextCommand({
       tokensNeedToPackAllMaterial,
       currentWorkerTokens
     );
-    const materialsToBuy = (finalTokenToUse * 100);
-    //const materialsToBuy = (materialAmount % 100) == 0 ? (finalTokenToUse * 100) : (finalTokenToUse * 100) - (materialAmount % 100);
+    
+    const materialsToBuy = (materialAmount % 100) == 0 ? Math.abs(finalTokenToUse * 100) : Math.abs(finalTokenToUse * 100) - (materialAmount % 100);
 
     newIdlons -= materialsToBuy * materialPrice;
     newMaterialAmount += materialsToBuy;
