@@ -99,6 +99,10 @@ export const generateEmbedHome = ({groups, client}: IGenerateEmbed) => {
           .join(', ')
       });
   }
+  embed.addFields({
+    name: '⚠️Feature deprecation⚠️',
+    value: `Due to better bots on the market, any \`guild\` and \`server\` command featurs are not mainatained actively.\n Don't use them.`
+  });
 
   embed.addFields({
     name: '\u200b',

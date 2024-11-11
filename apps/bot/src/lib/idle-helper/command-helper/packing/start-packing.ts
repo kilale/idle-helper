@@ -176,12 +176,12 @@ export const _startPacking = async ({
     if (idlons >= targetIdlons) {
       event?.stop();
       event = undefined;
-      return sendMessage(`You have got **${idlons.toLocaleString()}** idlons`);
+      return sendMessage(`You have got **${idlons.toLocaleString()}** idlons. Packing assistant stopped.`);
     }
     if (workerTokens <= 0 && boxAmount <= 0 && materialAmount < 100) {
       event?.stop();
       event = undefined;
-      return sendMessage('You have no more worker tokens');
+      return sendMessage('You have no more worker tokens. Packing assistant stopped.');
     }
     event?.resetTimer(ms('1m'));
     await sendNextCommand({
@@ -365,12 +365,12 @@ async function sendNextCommand({
       tokensNeedToPackAllMaterial,
       currentWorkerTokens
     );
-
-    const materialsToBuy = finalTokenToUse * 100;
+    
+    const materialsToBuy = (materialAmount % 100) == 0 ?(finalTokenToUse * 100) : (finalTokenToUse * 100) - (materialAmount % 100);
 
     newIdlons -= materialsToBuy * materialPrice;
     newMaterialAmount += materialsToBuy;
-
+  
     title = `Buy ${materialsToBuy.toLocaleString()} ${
       IDLE_FARM_ITEMS_PACKING_MATERIAL[materialName]
     }`;
